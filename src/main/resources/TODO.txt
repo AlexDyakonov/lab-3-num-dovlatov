@@ -1,0 +1,17 @@
+#Person
+ViktorD -> Person
+VictorC -> Person
+Lenin -> Person
+Lihachev -> Person
+
+#Profession
+Sculptor
+Chief
+Official
+Molder
+Stonecutter
+Master
+
+#Enum
+Instruments
+

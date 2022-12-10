@@ -15,7 +15,7 @@ target/
 *.ipr
 pom.xml
 workspace.xml
-
+TODO.txt
 ### Eclipse ###
 .apt_generated
 .classpath
