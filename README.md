@@ -3,7 +3,7 @@
 </p>
 <p align="center" style ="font-size: 24px"><em>Инфохимия</em></p>
 
-<p align="center" style ="font-size: 24px"><strong>Лабораторная работа №2 </br>
+<p align="center" style ="font-size: 24px"><strong>Лабораторная работа №3 </br>
 По дисциплине : «Программирование»</br>
 Отрывок из "Чемодана" Сергея Довлатова</strong>
 </p>
