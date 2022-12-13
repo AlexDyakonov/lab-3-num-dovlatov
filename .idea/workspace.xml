@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] entity.txt, text.txt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Adjectiveable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Usable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Marble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ViktorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/Instruments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TODO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/entity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entity.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -54,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/code/text-lab3",
+    "last_opened_file_path": "C:/Users/hack-/Documents/code/text-lab3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
