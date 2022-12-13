@@ -11,8 +11,4 @@ public abstract class Profession {
         return name;
     }
 
-    public void toBe() {
-
-    }
-
 }

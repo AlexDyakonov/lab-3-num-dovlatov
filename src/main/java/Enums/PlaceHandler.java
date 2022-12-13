@@ -5,11 +5,11 @@ public class PlaceHandler extends Handler {
         String output = new String();
         switch (place){
             case SQUARE ->
-                output += "площадь";
+                output += "вся площадь";
             case LENINGRAD ->
                 output += "ленинградский";
-            case CITY ->
-                output += "город";
+            case SILENCE ->
+                output += "В наступившей тишине";
         }
         return output;
     }

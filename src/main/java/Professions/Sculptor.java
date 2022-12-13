@@ -1,8 +1,29 @@
 package Professions;
 
-public class Sculptor extends Profession{
+import Enums.Handler;
+import Enums.Place;
+import Interfaces.Exists;
+import People.Person;
+
+public class Sculptor extends Profession implements Exists {
     public Sculptor() {
-        super("Скульптор");
+        super("скульптор");
+    }
+
+    public String toBePerson(Person person){
+        Handler h = new Handler();
+        return ("Это " + toBe(true, (byte) -1) + h.handle(Place.LENINGRAD) + " " + this.getName() + " " + person.getFirstSecondName());
+    }
+
+    @Override
+    public String toBe(Boolean negative, byte time){
+        String output = new String();
+        if (negative & time < 0){
+            output += "был ";
+        } else {
+            output += "";
+        }
+        return output;
     }
 
 }

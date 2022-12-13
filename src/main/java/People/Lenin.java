@@ -1,14 +1,32 @@
 package People;
 
+import Items.Cap;
+import Items.Item;
+
 public class Lenin extends Person {
     public Lenin() {
         super("Ленин");
     }
 
-    public void squeezeInArm(){
+    public String toSqueeze(Cap cap){
         Arm leninArm = new Arm();
-        System.out.println(leninArm.getAnother() + getFirstName() + " сжимал в " + (leninArm.getFist()) + ".");
+        return (Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist());
     }
+
+}
+class Arm{
+    String fist = "кулак";
+    public Arm() {
+    }
+
+    public String getFist() {
+        return fist;
+    }
+
+}
+
+
+/*
 
     @Override
     public Lenin toBe(Boolean negative, byte time) {
@@ -20,18 +38,5 @@ public class Lenin extends Person {
         return this;
     }
 
-    class Arm{
-        String fist = "кулак";
-        String another = "В другой ";
-        public Arm() {
-        }
 
-        public String getFist() {
-            return fist;
-        }
-
-        public String getAnother() {
-            return another;
-        }
-    }
-}
+*/

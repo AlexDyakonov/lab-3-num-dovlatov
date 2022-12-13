@@ -1,0 +1,13 @@
+m.faded() -- музыка стихла.
+
+nn.laughPlace(Place.SILENCE) -- В наступившей тишине кто-то смеяться
+
+nn.laughTimePlace(Time.MINUTE, Place.SQUARE) -- Через минуту смеяться вся площадь
+
+human.laugh(false) + "." -- Лишь один человек не смеяться.
+
+sculptor.toBePerson(viktorD) + "." -- Это был ленинградский скульптор Виктор Дрыжаков.
+
+monument.toBePublished(Time.MORNING) -- Наутро памятник был вновь обнародован.
+
+lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак

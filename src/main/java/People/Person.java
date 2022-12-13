@@ -1,6 +1,6 @@
 package People;
 
-public class Person {
+public abstract class Person {
     private final String firstName;
     private final String secondName;
 
@@ -26,9 +26,5 @@ public class Person {
         return (firstName + " " + secondName);
     }
 
-    public Person toBe(Boolean negative, byte time) {
-        Person person = null;
-        return this;
-    }
 
 }

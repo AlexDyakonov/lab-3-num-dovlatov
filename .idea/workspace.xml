@@ -4,29 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[MODIFIED] Project structure&#10;[ADDED] Item.java, Marble.java, Usable.java, Adjectiveable.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/PlaceHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/TimeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Drunkard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Master.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Molder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[MODIFIED] Project structure&#10;[ADDED] ENUM handlers, all professions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Monument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Substance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/Attribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Exists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Laugh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Cap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/People/NoName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Enums/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Marble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Marble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/PlaceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/PlaceHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/entity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entity.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670892367394</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[MODIFIED] Project structure&#10;[ADDED] ENUM handlers, all professions">
+      <created>1670959188849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670959188849</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +167,7 @@
     <MESSAGE value="[ADDED]Professions, Persons" />
     <MESSAGE value="[FIXED] .gitignore" />
     <MESSAGE value="[ADDED] entity.txt, text.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] entity.txt, text.txt" />
+    <MESSAGE value="[MODIFIED] Project structure&#10;[ADDED] ENUM handlers, all professions" />
+    <option name="LAST_COMMIT_MESSAGE" value="[MODIFIED] Project structure&#10;[ADDED] ENUM handlers, all professions" />
   </component>
 </project>
