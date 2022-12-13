@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[FIXED] .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/text.txt" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] entity.txt, text.txt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Adjectiveable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Usable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Marble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ViktorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/entity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/entity.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,11 +59,17 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -72,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670707254963</updated>
       <workItem from="1670707256155" duration="3803000" />
-      <workItem from="1670890665064" duration="1104000" />
+      <workItem from="1670890665064" duration="2106000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -102,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670710960975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[ADDED] entity.txt, text.txt">
+      <created>1670892367394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670892367394</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +141,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -123,6 +157,7 @@
     <MESSAGE value="Added project" />
     <MESSAGE value="[ADDED]Professions, Persons" />
     <MESSAGE value="[FIXED] .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIXED] .gitignore" />
+    <MESSAGE value="[ADDED] entity.txt, text.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] entity.txt, text.txt" />
   </component>
 </project>

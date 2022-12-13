@@ -1,13 +1,13 @@
-#Person
-ViktorD -> Person
-VictorC -> Person
-Lenin -> Person
-Lihachev -> Person
+#People.Person
+People.ViktorD -> People.Person
+VictorC -> People.Person
+People.Lenin -> People.Person
+People.Lihachev -> People.Person
 
-#Profession
-Sculptor
+#Professions.Profession
+Professions.Sculptor
 Chief
-Official
+Professions.Official
 Molder
 Stonecutter
 Master

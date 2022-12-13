@@ -1,3 +1,5 @@
+package Professions;
+
 public abstract class Profession {
     public String name;
 

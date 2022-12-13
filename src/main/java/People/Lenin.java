@@ -1,4 +1,6 @@
-public class Lenin extends Person{
+package People;
+
+public class Lenin extends Person {
     public Lenin(String firstName) {
         super(firstName);
     }

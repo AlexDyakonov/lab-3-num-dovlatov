@@ -1,6 +1,8 @@
+package People;
+
 public abstract class Person {
-    public String firstName;
-    public String secondName;
+    private final String firstName;
+    private final String secondName;
 
     public Person(String firstName, String secondName) {
         this.firstName = firstName;
@@ -9,6 +11,7 @@ public abstract class Person {
 
     public Person(String firstName) {
         this.firstName = firstName;
+        this.secondName = null;
     }
 
     public String getFirstName() {
