@@ -9,7 +9,7 @@ public class  Marble extends Item implements Adjectiveable {
     }
 
     @Override
-    public void beAdjective() {
-        System.out.println("мраморный");
+    public String beAdjective() {
+        return "мраморный";
     }
 }

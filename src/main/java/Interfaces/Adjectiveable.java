@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface Adjectiveable {
-    public void beAdjective();
+    public String beAdjective();
 }
