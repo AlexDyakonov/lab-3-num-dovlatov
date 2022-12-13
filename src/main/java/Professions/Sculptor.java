@@ -1,8 +1,8 @@
 package Professions;
 
 public class Sculptor extends Profession{
-    public Sculptor(String name) {
-        super(name);
+    public Sculptor() {
+        super("Скульптор");
     }
 
 }

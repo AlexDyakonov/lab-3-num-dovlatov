@@ -1,6 +1,6 @@
 package People;
 
-public abstract class Person {
+public class Person {
     private final String firstName;
     private final String secondName;
 
@@ -22,8 +22,13 @@ public abstract class Person {
         return secondName;
     }
 
-    public void toBe() {
+    public String getFirstSecondName(){
+        return (firstName + " " + secondName);
+    }
 
+    public Person toBe(Boolean negative, byte time) {
+        Person person = null;
+        return this;
     }
 
 }

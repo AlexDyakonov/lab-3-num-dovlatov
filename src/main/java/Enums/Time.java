@@ -1,11 +1,12 @@
 package Enums;
 
 public enum Time {
-    Minute,
-    Morning,
-    Overnight,
-    Gradually,
-    Everyday,
-    Opportunity,
-    Occasionally
-    }
+    MINUTE,
+    MORNING,
+    OVERNIGHT,
+    GRADUALLY,
+    EVERYDAY,
+    OPPORTUNITY,
+    OCCASIONALLY;
+}
+

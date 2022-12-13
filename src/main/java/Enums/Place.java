@@ -1,7 +1,7 @@
 package Enums;
 
 public enum Place {
-    Square,
-    Leningrad,
-    City
+    SQUARE,
+    LENINGRAD,
+    CITY
 }

@@ -4,8 +4,8 @@ import Interfaces.Adjectiveable;
 
 public class  Marble extends Item implements Adjectiveable {
 
-    public Marble(String name) {
-        super(name);
+    public Marble() {
+        super("мрамор");
     }
 
     @Override

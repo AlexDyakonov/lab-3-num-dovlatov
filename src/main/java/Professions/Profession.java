@@ -1,7 +1,7 @@
 package Professions;
 
 public abstract class Profession {
-    public String name;
+    private final String name;
 
     public Profession(String name) {
         this.name = name;
