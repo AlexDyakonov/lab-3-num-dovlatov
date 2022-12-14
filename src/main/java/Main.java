@@ -1,11 +1,12 @@
 import Content.Boulder;
-import Content.Figure;
 import Content.Monument;
 import Content.Music;
+import Emotional.Fear;
+import Emotional.Grimace;
 import Enums.Handler;
-import Enums.Place;
-import Enums.Time;
+import Enums.*;
 import Interfaces.Adjectiveable;
+import Items.Cap;
 import Items.Gypsum;
 import Items.Item;
 import Items.Marble;
@@ -15,10 +16,12 @@ import Professions.Sculptor;
 
 public class Main {
     public static void main(String[] args) {
+        String story = new String();
         Lenin lenin = new Lenin();
         Lihachev lihachev = new Lihachev();
         ViktorC viktorC = new ViktorC();
         ViktorD viktorD = new ViktorD();
+        Cap[] caps = {new Cap(), new Cap()};
         Me me = new Me();
         Person[] brigada = {me,  lihachev, viktorC};
         NoName nn = new NoName();
@@ -30,7 +33,12 @@ public class Main {
         Item gypsum = new Gypsum();
         Item marble = new Marble();
         Boulder boulder = new Boulder((Adjectiveable) marble);
+        Grimace grimace = new Grimace(new STATUS[]{STATUS.HOPELESSNESS, STATUS.INDIFFERENCE});
+        Fear fear = new Fear();
 
-        System.out.println();
+        story += (m.faded() + nn.laughPlace(PLACE.SILENCE) + "." + nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE) + ". \n");
+        story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ".");
+        story += ("\n");
+        System.out.println(story);
     }
 }

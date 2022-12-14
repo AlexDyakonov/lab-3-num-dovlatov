@@ -1,6 +1,6 @@
 package Enums;
 
-public enum Instruments {
+public enum INSTRUMENTS {
     Puncher,
     dottedLineMachine,
     Mallet,

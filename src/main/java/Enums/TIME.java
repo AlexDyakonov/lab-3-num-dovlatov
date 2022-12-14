@@ -1,6 +1,6 @@
 package Enums;
 
-public enum Time {
+public enum TIME {
     MINUTE,
     MORNING,
     OVERNIGHT,

@@ -1,9 +1,9 @@
 package Content;
-
+//предмет может быть описан прилагательным
 import Interfaces.Adjectiveable;
 
 public abstract class Substance {
-    private String name;
+    private final String name;
     private Adjectiveable adj;
 
     public Substance(String name) {

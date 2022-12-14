@@ -1,7 +1,7 @@
 package Enums;
 
 public class PlaceHandler extends Handler {
-    public static String placeHandle(Place place){
+    public static String placeHandle(PLACE place){
         String output = new String();
         switch (place){
             case SQUARE ->
@@ -10,12 +10,18 @@ public class PlaceHandler extends Handler {
                 output += "ленинградский";
             case SILENCE ->
                 output += "В наступившей тишине";
+            case FACE ->
+                    output += "на его лице";
+            case NOWHERE ->
+                    output += "нигде";
+            case NOPLACE ->
+                    output += "нигде";
         }
         return output;
     }
 
     @Override
-    public String handle(Place place) {
+    public String handle(PLACE place) {
         return placeHandle(place);
     }
 }

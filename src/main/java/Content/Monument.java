@@ -1,7 +1,7 @@
 package Content;
 
 import Enums.Handler;
-import Enums.Time;
+import Enums.TIME;
 import Interfaces.Exists;
 
 public class Monument extends Substance implements Exists {
@@ -9,7 +9,7 @@ public class Monument extends Substance implements Exists {
         super("памятник");
     }
 
-    public String toBePublished(Time time){
+    public String toBePublished(TIME time){
         Handler h = new Handler();
         return (h.handle(time) + " " + this.getName() + " "+ toBe(true, (byte) -1) + "вновь обнародован.");
     }

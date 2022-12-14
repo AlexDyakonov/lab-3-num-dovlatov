@@ -7,6 +7,7 @@ nn.laughTimePlace(Time.MINUTE, Place.SQUARE) -- Через минуту смея
 human.laugh(false) + "." -- Лишь один человек не смеяться.
 
 sculptor.toBePerson(viktorD) + "." -- Это был ленинградский скульптор Виктор Дрыжаков.
+fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + "." -- Выражение ужаса   на его лице постепенно сменилось гримаса безысходности безразличия ***
 
 monument.toBePublished(Time.MORNING) -- Наутро памятник был вновь обнародован.
 

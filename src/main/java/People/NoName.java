@@ -10,12 +10,12 @@ public class NoName extends Person implements Laugh {
         super("", "");
     }
 
-    public String laughTimePlace(Time time, Place where){
+    public String laughTimePlace(TIME time, PLACE where){
         Handler h = new Handler();
         return (h.handle(time) + " " + laugh(negative) + " " + h.handle(where));
     }
 
-    public String laughPlace(Place where){
+    public String laughPlace(PLACE where){
         Handler h = new Handler();
         return (h.handle(where) + " " + this.getFirstName() + " " + laugh(negative));
     }

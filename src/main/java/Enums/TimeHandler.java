@@ -1,7 +1,7 @@
 package Enums;
 
 public class TimeHandler extends Handler {
-    public static String timeHandle(Time time){
+    public static String timeHandle(TIME time){
         String output = new String();
         switch (time){
             case EVERYDAY ->
@@ -23,7 +23,7 @@ public class TimeHandler extends Handler {
     }
 
     @Override
-    public String handle(Time time) {
+    public String handle(TIME time) {
         return timeHandle(time);
     }
 }
