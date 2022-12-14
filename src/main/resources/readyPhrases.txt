@@ -7,11 +7,18 @@ nn.laughTimePlace(Time.MINUTE, Place.SQUARE) -- Через минуту смея
 human.laugh(false) + "." -- Лишь один человек не смеяться.
 
 sculptor.toBePerson(viktorD) + "." -- Это был ленинградский скульптор Виктор Дрыжаков.
-fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + "." -- Выражение ужаса   на его лице постепенно сменилось гримаса безысходности безразличия ***
+
+fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + "." -- Выражение ужаса   на его лице постепенно сменилось гримаса безысходности безразличия
+
+h.handle(SPECIAL.WTF) + "" -- Что же произошло?
+
+sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + "." -- Несчастный скульптор изваял две кепка.
+
+chief.cover(new Cap[]{new Cap()}) + "." -- Одна покрывала голову вождь.
+
+lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак ***
 
 monument.toBePublished(Time.MORNING) -- Наутро памятник был вновь обнародован.
-
-lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак
 
 System.out.print(new Figure(gypsum)); -- есть гипсовый фигура
 

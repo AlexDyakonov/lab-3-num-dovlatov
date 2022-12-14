@@ -9,5 +9,6 @@ public enum SPECIAL {
     ANDSOON,
     INGENERAL,
     OFC,
-    ABSOLUTELY
+    ABSOLUTELY,
+    WTF
 }

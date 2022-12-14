@@ -22,6 +22,8 @@ public class SpecialHandler extends Handler{
                         output += "разумеется";
                 case ABSOLUTELY ->
                         output += "Абсолютно точно";
+                case WTF ->
+                        output += "Что же произошло?";
             }
             return output;
         }

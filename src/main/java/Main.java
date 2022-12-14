@@ -11,6 +11,8 @@ import Items.Gypsum;
 import Items.Item;
 import Items.Marble;
 import People.*;
+import Professions.Chief;
+import Professions.Profession;
 import Professions.Sculptor;
 
 
@@ -28,17 +30,19 @@ public class Main {
         Handler h = new Handler();
         Music m = new Music();
         Human human = new Human();
-        Sculptor sculptor = new Sculptor();
+        Sculptor sculptor = new Sculptor(STATUS.NORMAL);
         Monument monument = new Monument();
         Item gypsum = new Gypsum();
         Item marble = new Marble();
         Boulder boulder = new Boulder((Adjectiveable) marble);
         Grimace grimace = new Grimace(new STATUS[]{STATUS.HOPELESSNESS, STATUS.INDIFFERENCE});
         Fear fear = new Fear();
+        Chief chief = new Chief();
 
         story += (m.faded() + nn.laughPlace(PLACE.SILENCE) + "." + nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE) + ". \n");
-        story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ".");
-        story += ("\n");
+        story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ". \n");
+        story += (h.handle(SPECIAL.WTF) + ""); sculptor.setStatus(STATUS.UNHAPPY); story += (sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + ".");
+        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()));
         System.out.println(story);
     }
 }

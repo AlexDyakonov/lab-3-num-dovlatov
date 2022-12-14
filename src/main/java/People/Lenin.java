@@ -12,31 +12,17 @@ public class Lenin extends Person {
         Arm leninArm = new Arm();
         return (Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist());
     }
-
-}
-class Arm{
-    String fist = "кулак";
-    public Arm() {
-    }
-
-    public String getFist() {
-        return fist;
-    }
-
-}
-
-
-/*
-
-    @Override
-    public Lenin toBe(Boolean negative, byte time) {
-        if (negative == Boolean.TRUE){
-            System.out.println(getFirstName() + " не быть");
-        } else {
-            System.out.println(getFirstName() + " быть");
+    static class Arm{
+        private final String fist = "кулак";
+        public Arm() {
         }
-        return this;
+
+        public String getFist() {
+            return fist;
+        }
+
     }
 
+}
 
-*/
+
