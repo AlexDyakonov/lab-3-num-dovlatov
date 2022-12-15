@@ -4,5 +4,6 @@ public enum STATUS {
     NORMAL,
     INDIFFERENCE,
     HOPELESSNESS,
-    UNHAPPY
+    UNHAPPY,
+    BROKEN,
 }

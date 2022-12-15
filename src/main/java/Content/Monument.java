@@ -1,12 +1,16 @@
 package Content;
 
 import Enums.Handler;
+import Enums.STATUS;
 import Enums.TIME;
 import Interfaces.Exists;
 
 public class Monument extends Substance implements Exists {
     public Monument() {
-        super("памятник");
+        super("памятник", STATUS.NORMAL);
+    }
+    public Monument(STATUS status){
+        super("монумент", status);
     }
 
     public String toBePublished(TIME time){

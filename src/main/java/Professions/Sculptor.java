@@ -8,12 +8,10 @@ import Items.Item;
 import People.Person;
 
 public class Sculptor extends Profession implements Exists {
-    private STATUS status;
-    public Sculptor(STATUS status) {
-        super("скульптор");
-        this.status = status;
-    }
 
+    public Sculptor(STATUS status) {
+        super("скульптор", status);
+    }
 
 
     public String make(Item[] items){
@@ -35,13 +33,6 @@ public class Sculptor extends Profession implements Exists {
         return ("Это " + toBe(true, (byte) -1) + h.handle(PLACE.LENINGRAD) + " " + this.getName() + " " + person.getFirstSecondName());
     }
 
-    public STATUS getStatus() {
-        return status;
-    }
-
-    public void setStatus(STATUS status) {
-        this.status = status;
-    }
 
     @Override
     public String toBe(Boolean negative, byte time){
@@ -57,6 +48,6 @@ public class Sculptor extends Profession implements Exists {
     @Override
     public String toString() {
         Handler h = new Handler();
-        return (h.handle(this.status) + " " + this.getName());
+        return (h.handle(this.getStatus()) + " " + this.getName());
     }
 }

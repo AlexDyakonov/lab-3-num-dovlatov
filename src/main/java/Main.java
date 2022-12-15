@@ -6,12 +6,10 @@ import Emotional.Grimace;
 import Enums.Handler;
 import Enums.*;
 import Interfaces.Adjectiveable;
-import Items.Cap;
-import Items.Gypsum;
-import Items.Item;
-import Items.Marble;
+import Items.*;
 import People.*;
 import Professions.Chief;
+import Professions.Official;
 import Professions.Profession;
 import Professions.Sculptor;
 
@@ -38,11 +36,13 @@ public class Main {
         Grimace grimace = new Grimace(new STATUS[]{STATUS.HOPELESSNESS, STATUS.INDIFFERENCE});
         Fear fear = new Fear();
         Chief chief = new Chief();
+        Official official = new Official();
 
         story += (m.faded() + nn.laughPlace(PLACE.SILENCE) + "." + nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE) + ". \n");
         story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ". \n");
         story += (h.handle(SPECIAL.WTF) + ""); sculptor.setStatus(STATUS.UNHAPPY); story += (sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + ".");
-        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()));
+        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()) + ". \n" + official.hide(TIME.HASTILY, (new Monument(STATUS.BROKEN)), new Cloth(" серой ")) + ".");
+        story += ("\n");
         System.out.println(story);
     }
 }

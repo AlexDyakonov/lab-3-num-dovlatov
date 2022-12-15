@@ -12,6 +12,8 @@ public class StatusHandler extends Handler{
                     output += "безысходности";
             case UNHAPPY ->
                     output += "Несчастный";
+            case BROKEN ->
+                    output += "бракованный";
         }
         return output;
     }

@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] Emotion abstract, FEAR GRIMACE emotions. STATUS enum &amp; handler&#10;[MODIFIED] TIME PLACE enums and handlers&#10;[DELETED] TODO.txt">
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[MODIFIED] Chief functional and Lenin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Cloth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SpecialHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/SpecialHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Monument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Monument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Substance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Substance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/StatusHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/StatusHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TimeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" afterDir="false" />
     </list>
@@ -23,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,23 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/документы для учебы",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/документы для учебы&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -86,7 +92,8 @@
       <updated>1670707254963</updated>
       <workItem from="1670707256155" duration="3803000" />
       <workItem from="1670890665064" duration="2106000" />
-      <workItem from="1671042837478" duration="13119000" />
+      <workItem from="1671042837478" duration="13587000" />
+      <workItem from="1671082398389" duration="4820000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -151,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671058641129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[MODIFIED] Chief functional and Lenin">
+      <created>1671061039196</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671061039196</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +197,7 @@
     <MESSAGE value="[ADDED] Content, Few Items" />
     <MESSAGE value="[ADDED] readyPhrases.txt, few classes: Boulder, Me, Figure, Gypsum .java&#10;[MODIFIED] Substance by adding Adjectiveable to fields&#10;[EXPANDED] More classes using Adjectiveable interface" />
     <MESSAGE value="[ADDED] Emotion abstract, FEAR GRIMACE emotions. STATUS enum &amp; handler&#10;[MODIFIED] TIME PLACE enums and handlers&#10;[DELETED] TODO.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] Emotion abstract, FEAR GRIMACE emotions. STATUS enum &amp; handler&#10;[MODIFIED] TIME PLACE enums and handlers&#10;[DELETED] TODO.txt" />
+    <MESSAGE value="[MODIFIED] Chief functional and Lenin" />
+    <option name="LAST_COMMIT_MESSAGE" value="[MODIFIED] Chief functional and Lenin" />
   </component>
 </project>

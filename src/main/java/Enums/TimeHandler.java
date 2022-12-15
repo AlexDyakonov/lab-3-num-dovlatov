@@ -18,6 +18,8 @@ public class TimeHandler extends Handler {
                 output += "За ночь";
             case OPPORTUNITY ->
                 output += "при каждом удобном случае";
+            case HASTILY ->
+                    output += "поспешно";
         }
         return output;
     }

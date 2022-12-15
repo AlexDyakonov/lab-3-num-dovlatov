@@ -16,7 +16,9 @@ sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + "." -- Несчастн
 
 chief.cover(new Cap[]{new Cap()}) + "." -- Одна покрывала голову вождь.
 
-lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак ***
+lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак
+
+official.hide(TIME.HASTILY, (new Monument(STATUS.BROKEN)), new Cloth(" серой ")) -- Чиновник поспешно укутали бракованный монумент  серой ткань ***
 
 monument.toBePublished(Time.MORNING) -- Наутро памятник был вновь обнародован.
 

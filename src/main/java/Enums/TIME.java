@@ -7,6 +7,7 @@ public enum TIME {
     GRADUALLY,
     EVERYDAY,
     OPPORTUNITY,
-    OCCASIONALLY;
+    OCCASIONALLY,
+    HASTILY;
 }
 
