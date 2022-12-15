@@ -1,5 +1,8 @@
 package Items;
 
+import Enums.Handler;
+import Enums.TIME;
+
 public class Cap extends Item{
     public Cap() {
         super("кепка");
@@ -18,6 +21,11 @@ public class Cap extends Item{
                 output = null;
         }
         return output;
+    }
+
+    public String removeCap(){
+        Handler h = new Handler();
+        return (h.handle(TIME.OVERNIGHT) + " лишнюю " + this.getName() + " убрали.");
     }
 
 }

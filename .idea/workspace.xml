@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[MODIFIED] Chief functional and Lenin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Cloth.java" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] new Item: Cloth&#10;[MODIFIED] Monument, Official, Status, Time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Monument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Monument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Substance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Substance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/StatusHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/StatusHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TimeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Cap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Cap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Profession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +83,7 @@
       <workItem from="1670707256155" duration="3803000" />
       <workItem from="1670890665064" duration="2106000" />
       <workItem from="1671042837478" duration="13587000" />
-      <workItem from="1671082398389" duration="4820000" />
+      <workItem from="1671082398389" duration="5183000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -165,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671061039196</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[ADDED] new Item: Cloth&#10;[MODIFIED] Monument, Official, Status, Time">
+      <created>1671143331313</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671143331313</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +195,7 @@
     <MESSAGE value="[ADDED] readyPhrases.txt, few classes: Boulder, Me, Figure, Gypsum .java&#10;[MODIFIED] Substance by adding Adjectiveable to fields&#10;[EXPANDED] More classes using Adjectiveable interface" />
     <MESSAGE value="[ADDED] Emotion abstract, FEAR GRIMACE emotions. STATUS enum &amp; handler&#10;[MODIFIED] TIME PLACE enums and handlers&#10;[DELETED] TODO.txt" />
     <MESSAGE value="[MODIFIED] Chief functional and Lenin" />
-    <option name="LAST_COMMIT_MESSAGE" value="[MODIFIED] Chief functional and Lenin" />
+    <MESSAGE value="[ADDED] new Item: Cloth&#10;[MODIFIED] Monument, Official, Status, Time" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] new Item: Cloth&#10;[MODIFIED] Monument, Official, Status, Time" />
   </component>
 </project>
