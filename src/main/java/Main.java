@@ -1,17 +1,10 @@
-import Content.Boulder;
-import Content.Monument;
-import Content.Music;
-import Emotional.Fear;
-import Emotional.Grimace;
-import Enums.Handler;
+import Content.*;
+import Emotional.*;
 import Enums.*;
 import Interfaces.Adjectiveable;
 import Items.*;
 import People.*;
-import Professions.Chief;
-import Professions.Official;
-import Professions.Profession;
-import Professions.Sculptor;
+import Professions.*;
 
 
 public class Main {
@@ -22,6 +15,7 @@ public class Main {
         ViktorC viktorC = new ViktorC();
         ViktorD viktorD = new ViktorD();
         Cap[] caps = {new Cap(), new Cap()};
+        Cap cap = new Cap();
         Me me = new Me();
         Person[] brigada = {me,  lihachev, viktorC};
         NoName nn = new NoName();
@@ -41,8 +35,8 @@ public class Main {
         story += (m.faded() + nn.laughPlace(PLACE.SILENCE) + "." + nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE) + ". \n");
         story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ". \n");
         story += (h.handle(SPECIAL.WTF) + ""); sculptor.setStatus(STATUS.UNHAPPY); story += (sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + ".");
-        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()) + ". \n" + official.hide(TIME.HASTILY, (new Monument(STATUS.BROKEN)), new Cloth(" серой ")) + ".");
-        story += ("\n");
+        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()) + ". \n" + official.hide(TIME.HASTILY, (new Monument(STATUS.BROKEN)), new Cloth(" серой ")) + ".\n");
+        story += (monument.toBePublished(TIME.MORNING) + cap.removeCap(TIME.OVERNIGHT) + "\n");
         System.out.println(story);
     }
 }
