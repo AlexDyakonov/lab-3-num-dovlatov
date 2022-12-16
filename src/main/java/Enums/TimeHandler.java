@@ -20,6 +20,10 @@ public class TimeHandler extends Handler {
                 output += "при каждом удобном случае";
             case HASTILY ->
                     output += "поспешно";
+            case AGAIN ->
+                    output += "снова";
+            case LATER ->
+                    output += "Потом";
         }
         return output;
     }

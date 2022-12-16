@@ -18,6 +18,10 @@ public class Monument extends Substance implements Exists {
         return (h.handle(time) + " " + this.getName() + " "+ toBe(true, (byte) -1) + "вновь обнародован.");
     }
 
+    public String toBeBorn(){
+        return (this.getName() + " рождаются так.");
+    }
+
     @Override
     public String toBe(Boolean negative, byte time) {
         String output = new String();

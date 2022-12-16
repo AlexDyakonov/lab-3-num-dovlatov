@@ -40,5 +40,9 @@ public abstract class Substance {
     public void setStatus(STATUS status) {
         this.status = status;
     }
+    @Override
+    public boolean equals(Object obj) {
+        return this.getClass() == obj.getClass();
+    }
 
 }

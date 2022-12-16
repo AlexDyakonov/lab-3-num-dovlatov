@@ -21,8 +21,16 @@ lenin.toSqueeze(new Cap()) -- Другую Ленин сжимал в кулак
 official.hide(TIME.HASTILY, (new Monument(STATUS.BROKEN)), new Cloth(" серой ")) -- Чиновник поспешно укутали бракованный монумент  серой ткань
 
 monument.toBePublished(Time.MORNING) -- Наутро памятник был вновь обнародован.
-cap.removeCap(TIME.OVERNIGHT) -- За ночь лишнюю кепка убрали.***
 
-System.out.print(new Figure(gypsum)); -- есть гипсовый фигура
+cap.removeCap(TIME.OVERNIGHT) -- За ночь лишнюю кепка убрали.
+
+me.disturbed(TIME.AGAIN) -- Мы снова отвлеклись. monument1.toBeBorn() -- монумент рождаются так.
+
+sculptor.sculptorMade(figure) -- скульптор лепит глиняняный фигура. molder.cast(monument1, monument, gypsum) -- формовщик отливаает её в гипс.
+
+stoneCutter.takeOn(TIME.LATER) -- Потом за дело берутся камнерезы. System.out.print(new Figure(gypsum)); -- есть гипсовый фигура
 
 boulder.toBeDescrition() + "." -- И есть бесформенная мраморный глыба.
+
+h.handle(SPECIAL.NECESSARY) + h.handle(SPECIAL.ASTHEYSAY) + nn.remove() + h.handle(SPECIAL.ABSOLUTELY) + nn.copy(figure1) -- Необходимо, как говорится, убрать все лишнее.Абсолютно точно скопировать гипсовый фигура.
+

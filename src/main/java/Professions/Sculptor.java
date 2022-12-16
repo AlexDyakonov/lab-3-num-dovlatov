@@ -1,5 +1,6 @@
 package Professions;
 
+import Content.Substance;
 import Enums.Handler;
 import Enums.PLACE;
 import Enums.STATUS;
@@ -26,6 +27,10 @@ public class Sculptor extends Profession implements Exists {
 
     public String sculptorMade(Item[] items){
         return (this.toString() + make(items));
+    }
+
+    public String sculptorMade(Substance substance){
+        return (this.getName() + " лепит " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
     }
 
     public String toBePerson(Person person){

@@ -8,6 +8,8 @@ public enum TIME {
     EVERYDAY,
     OPPORTUNITY,
     OCCASIONALLY,
-    HASTILY;
+    HASTILY,
+    AGAIN,
+    LATER;
 }
 

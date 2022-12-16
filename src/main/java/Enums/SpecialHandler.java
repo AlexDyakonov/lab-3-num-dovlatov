@@ -7,7 +7,7 @@ public class SpecialHandler extends Handler{
                 case NECESSARY ->
                         output += "Необходимо";
                 case ASTHEYSAY ->
-                        output += "как говорится";
+                        output += ", как говорится, ";
                 case FORTHIS ->
                         output += "Для этого";
                 case THEN ->

@@ -1,13 +1,23 @@
 package People;
 
+import Content.Substance;
 import Enums.*;
 import Interfaces.Laugh;
+import Items.Item;
 
 
 public class NoName extends Person implements Laugh {
     private final boolean negative = true;
     public NoName() {
         super("", "");
+    }
+
+    public String remove(){
+        return (getSecondName() + "убрать все лишнее.");
+    }
+
+    public String copy(Substance substance){
+        return (" скопировать " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
     }
 
     public String laughTimePlace(TIME time, PLACE where){
