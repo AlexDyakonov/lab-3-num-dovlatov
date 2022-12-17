@@ -1,5 +1,8 @@
 package Professions;
 
+
+import static StringMethods.StringMeth.capitalize;
+
 import Content.Monument;
 import Content.Substance;
 import Items.Item;
@@ -11,7 +14,7 @@ public class Molder extends Profession{
 
     public String cast(Substance substance, Monument monument, Item item2){
         if (monument.equals(substance)){
-            return (this.getName() + " отливаает её в " + item2.getName() + ".");
+            return (capitalize(this.getName()) + " отливает её в " + item2.getName());
         } else return "";
     }
 }

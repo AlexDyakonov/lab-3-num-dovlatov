@@ -27,9 +27,4 @@ public class TimeHandler extends Handler {
         }
         return output;
     }
-
-    @Override
-    public String handle(TIME time) {
-        return timeHandle(time);
-    }
 }

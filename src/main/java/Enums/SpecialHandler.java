@@ -27,10 +27,5 @@ public class SpecialHandler extends Handler{
             }
             return output;
         }
-
-        @Override
-        public String handle(SPECIAL special) {
-            return specialHandle(special);
-        }
 }
 

@@ -13,11 +13,11 @@ public class NoName extends Person implements Laugh {
     }
 
     public String remove(){
-        return (getSecondName() + "убрать все лишнее.");
+        return (getSecondName() + "убрать все лишнее");
     }
 
     public String copy(Substance substance){
-        return (" скопировать " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
+        return (" скопировать " + substance.getAdj().beAdjective() + " " + substance.getName());
     }
 
     public String laughTimePlace(TIME time, PLACE where){

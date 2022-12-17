@@ -3,6 +3,8 @@ package Content;
 import Interfaces.Adjectiveable;
 import Interfaces.Exists;
 
+import static StringMethods.StringMeth.capitalize;
+
 public class Figure extends Substance implements Exists {
 
     public Figure(Adjectiveable adj) {
@@ -11,7 +13,7 @@ public class Figure extends Substance implements Exists {
 
     @Override
     public String toString() {
-        return (toBe(true, (byte) 0) + getAdj().beAdjective() + " " + this.getName());
+        return (capitalize(toBe(true, (byte) 0)) + getAdj().beAdjective() + " " + this.getName());
     }
 
     @Override

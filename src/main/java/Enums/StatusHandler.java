@@ -17,9 +17,4 @@ public class StatusHandler extends Handler{
         }
         return output;
     }
-
-    @Override
-    public String handle(STATUS status) {
-        return statusHandle(status);
-    }
 }

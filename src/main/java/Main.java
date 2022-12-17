@@ -6,10 +6,16 @@ import Items.*;
 import People.*;
 import Professions.*;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import static StringMethods.StringMeth.*;
+
 
 public class Main {
     public static void main(String[] args) {
-        String story = new String();
+        String story = "";
         Lenin lenin = new Lenin();
         Lihachev lihachev = new Lihachev();
         ViktorC viktorC = new ViktorC();
@@ -37,14 +43,21 @@ public class Main {
         StoneCutter stoneCutter = new StoneCutter();
         Figure figure1 = new Figure((Adjectiveable) gypsum);
 
-        story += (m.faded() + nn.laughPlace(PLACE.SILENCE) + "." + nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE) + ". \n");
-        story += (human.laugh(false) + "." + sculptor.toBePerson(viktorD) + "." + fear.change(PLACE.FACE, TIME.GRADUALLY, grimace) + ". \n");
-        story += (h.handle(SPECIAL.WTF) + ""); sculptor.setStatus(STATUS.UNHAPPY); story += (sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()}) + ".");
-        story += (chief.cover(new Cap[]{new Cap()}) + "." + lenin.toSqueeze(new Cap()) + ". \n" + official.hide(TIME.HASTILY, (monument1), new Cloth(" серой ")) + ".\n");
-        story += (monument.toBePublished(TIME.MORNING) + cap.removeCap(TIME.OVERNIGHT) + "\n" + me.disturbed(TIME.AGAIN) + "\n"); monument1.setStatus(STATUS.NORMAL); sculptor.setStatus(STATUS.NORMAL);
-        story += (monument1.toBeBorn() + sculptor.sculptorMade(figure) + molder.cast(monument1, monument, gypsum) + stoneCutter.takeOn(TIME.LATER) + "\n");
-        story += ((figure1) + "." + boulder.toBeDescrition() + "." + h.handle(SPECIAL.NECESSARY) + h.handle(SPECIAL.ASTHEYSAY) + nn.remove() + h.handle(SPECIAL.ABSOLUTELY) + nn.copy(figure1) + "\n");
-        story += ("Для этого");
+        story += (m.faded() + dot(nn.laughPlace(PLACE.SILENCE)) + dotn(nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE)));
+        story += (dot(human.laugh(false)) + dot(sculptor.toBePerson(viktorD)) + dotn(fear.change(PLACE.FACE, TIME.GRADUALLY, grimace)));
+        story += (h.handle(SPECIAL.WTF)); sculptor.setStatus(STATUS.UNHAPPY); story += (dot(sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()})));
+        story += (dot(chief.cover(new Cap[]{new Cap()})) + dotn(lenin.toSqueeze(new Cap())) + dotn(official.hide(TIME.HASTILY, (monument1), new Cloth(" серой "))));
+        story += (dot(monument.toBePublished(TIME.MORNING)) + dotn(cap.removeCap(TIME.OVERNIGHT)) + dotn(me.disturbed(TIME.AGAIN))); monument1.setStatus(STATUS.NORMAL); sculptor.setStatus(STATUS.NORMAL);
+        story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + stoneCutter.takeOn(TIME.LATER) + "\n");
+        story += ((figure1) + "." + dot(boulder.toBeDescrition()) + h.handle(SPECIAL.NECESSARY) + h.handle(SPECIAL.ASTHEYSAY) + dot(nn.remove()) + h.handle(SPECIAL.ABSOLUTELY) + dotn(nn.copy(figure1)));
+        story += (h.handle(SPECIAL.FORTHIS));
         System.out.println(story);
+
+        try(FileWriter outputText = new FileWriter(new File("E:\\code\\text-lab3\\src\\main\\resources", "output.txt"))){
+            outputText.write(story);
+        } catch (IOException e) {
+            System.out.println("Не удалось создать файл.");
+        }
+
     }
 }

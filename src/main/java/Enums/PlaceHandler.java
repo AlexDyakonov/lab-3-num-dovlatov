@@ -19,9 +19,4 @@ public class PlaceHandler extends Handler {
         }
         return output;
     }
-
-    @Override
-    public String handle(PLACE place) {
-        return placeHandle(place);
-    }
 }

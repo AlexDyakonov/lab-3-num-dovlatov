@@ -10,7 +10,7 @@ public class Me extends Person implements Exists {
     }
     public String disturbed(TIME time){
         Handler h = new Handler();
-        return ("Мы " + h.handle(time) + " отвлеклись.");
+        return ("Мы " + h.handle(time) + " отвлеклись");
     }
 
     @Override

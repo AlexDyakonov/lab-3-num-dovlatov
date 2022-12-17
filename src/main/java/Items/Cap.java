@@ -25,7 +25,7 @@ public class Cap extends Item{
 
     public String removeCap(TIME time){
         Handler h = new Handler();
-        return (h.handle(time) + " лишнюю " + this.getName() + " убрали.");
+        return (h.handle(time) + " лишнюю " + this.getName() + " убрали");
     }
 
 }

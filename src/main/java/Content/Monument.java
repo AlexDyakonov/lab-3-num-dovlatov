@@ -5,6 +5,8 @@ import Enums.STATUS;
 import Enums.TIME;
 import Interfaces.Exists;
 
+import static StringMethods.StringMeth.capitalize;
+
 public class Monument extends Substance implements Exists {
     public Monument() {
         super("памятник", STATUS.NORMAL);
@@ -15,11 +17,11 @@ public class Monument extends Substance implements Exists {
 
     public String toBePublished(TIME time){
         Handler h = new Handler();
-        return (h.handle(time) + " " + this.getName() + " "+ toBe(true, (byte) -1) + "вновь обнародован.");
+        return (h.handle(time) + " " + this.getName() + " "+ toBe(true, (byte) -1) + "вновь обнародован");
     }
 
     public String toBeBorn(){
-        return (this.getName() + " рождаются так.");
+        return (capitalize(this.getName()) + " рождаются так");
     }
 
     @Override

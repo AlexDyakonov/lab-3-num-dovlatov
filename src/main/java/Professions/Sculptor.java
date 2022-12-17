@@ -8,6 +8,8 @@ import Interfaces.Exists;
 import Items.Item;
 import People.Person;
 
+import static StringMethods.StringMeth.capitalize;
+
 public class Sculptor extends Profession implements Exists {
 
     public Sculptor(STATUS status) {
@@ -30,7 +32,7 @@ public class Sculptor extends Profession implements Exists {
     }
 
     public String sculptorMade(Substance substance){
-        return (this.getName() + " лепит " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
+        return (capitalize(this.getName()) + " лепит " + substance.getAdj().beAdjective() + " " + substance.getName());
     }
 
     public String toBePerson(Person person){
