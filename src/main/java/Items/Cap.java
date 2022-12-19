@@ -1,6 +1,5 @@
 package Items;
 
-import Enums.Handler;
 import Enums.TIME;
 
 public class Cap extends Item{
@@ -24,8 +23,7 @@ public class Cap extends Item{
     }
 
     public String removeCap(TIME time){
-        Handler h = new Handler();
-        return (h.handle(time) + " лишнюю " + this.getName() + " убрали");
+        return (time + " лишнюю " + this.getName() + " убрали");
     }
 
 }

@@ -1,9 +1,7 @@
 package Emotional;
 
-import Enums.Handler;
+import UNUSED.Handler;
 import Enums.STATUS;
-
-import java.util.Arrays;
 
 public abstract class Emotion {
     private final String name;

@@ -1,7 +1,6 @@
 package Professions;
 
 import Content.Substance;
-import Enums.Handler;
 import Enums.TIME;
 import Items.Item;
 
@@ -11,8 +10,7 @@ public class Official extends Profession {
     }
 
     public String hide(TIME time, Substance substance, Item item){
-        Handler h = new Handler();
-        return (this.getName() + " " + h.handle(time) + " укутали " + h.handle(substance.getStatus()) + " " + substance.getName() + " " + item.getName());
+        return (this.getName() + " " + time + " укутали " + substance.getStatus() + " " + substance.getName() + " " + item.getName());
     }
 
 

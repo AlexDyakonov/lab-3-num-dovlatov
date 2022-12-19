@@ -17,7 +17,7 @@ public class Figure extends Substance implements Exists {
     }
 
     @Override
-    public String toBe(Boolean negative, byte time) {
+    public String toBe(Boolean negative, int time) {
         String output = new String();
         if (negative & time == 0){
             output += "есть ";

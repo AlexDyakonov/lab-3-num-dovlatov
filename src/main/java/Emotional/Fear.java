@@ -1,7 +1,6 @@
 package Emotional;
 
 
-import Enums.Handler;
 import Enums.PLACE;
 import Enums.STATUS;
 import Enums.TIME;
@@ -15,7 +14,6 @@ public class Fear extends Emotion {
         super("Выражение ужаса", status);
     }
     public String change(PLACE place, TIME time, Emotion emotion){
-        Handler h = new Handler();
-        return (this.toString() + " " + h.handle(place) + " " + h.handle(time) + " сменилось " + emotion.toString());
+        return (this.toString() + " " + place + " " + time + " сменилось " + emotion.toString());
     }
 }

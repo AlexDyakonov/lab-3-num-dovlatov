@@ -3,7 +3,6 @@ package People;
 import Content.Substance;
 import Enums.*;
 import Interfaces.Laugh;
-import Items.Item;
 
 
 public class NoName extends Person implements Laugh {
@@ -21,13 +20,11 @@ public class NoName extends Person implements Laugh {
     }
 
     public String laughTimePlace(TIME time, PLACE where){
-        Handler h = new Handler();
-        return (h.handle(time) + " " + laugh(negative) + " " + h.handle(where));
+        return (time + " " + laugh(negative) + " " + where);
     }
 
     public String laughPlace(PLACE where){
-        Handler h = new Handler();
-        return (h.handle(where) + " " + this.getFirstName() + " " + laugh(negative));
+        return (where + " " + this.getFirstName() + " " + laugh(negative));
     }
     @Override
     public String getFirstName() {

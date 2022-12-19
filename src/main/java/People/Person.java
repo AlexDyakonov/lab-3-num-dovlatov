@@ -42,6 +42,4 @@ public abstract class Person {
     public String getFirstSecondName(){
         return (firstName + " " + secondName);
     }
-
-
 }

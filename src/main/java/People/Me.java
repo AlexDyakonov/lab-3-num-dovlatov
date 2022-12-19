@@ -1,6 +1,5 @@
 package People;
 
-import Enums.Handler;
 import Enums.TIME;
 import Interfaces.Exists;
 
@@ -9,13 +8,12 @@ public class Me extends Person implements Exists {
         super("Я");
     }
     public String disturbed(TIME time){
-        Handler h = new Handler();
-        return ("Мы " + h.handle(time) + " отвлеклись");
+        return ("Мы " + time + " отвлеклись");
     }
 
     @Override
-    public String toBe(Boolean negative, byte time) {
-        String output = new String();
+    public String toBe(Boolean negative, int time) {
+        String output = "";
         if (negative & time < 0){
             output += "был ";
         } else {

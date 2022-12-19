@@ -1,7 +1,7 @@
 package Professions;
 
 import Content.Substance;
-import Enums.Handler;
+import UNUSED.Handler;
 import Enums.PLACE;
 import Enums.STATUS;
 import Interfaces.Exists;
@@ -18,7 +18,7 @@ public class Sculptor extends Profession implements Exists {
 
 
     public String make(Item[] items){
-        String output = new String();
+        String output = "";
         switch (items.length){
             case 1 -> output += items[0].getName();
             case 2 -> output += "две " + items[0].getName();
@@ -37,13 +37,13 @@ public class Sculptor extends Profession implements Exists {
 
     public String toBePerson(Person person){
         Handler h = new Handler();
-        return ("Это " + toBe(true, (byte) -1) + h.handle(PLACE.LENINGRAD) + " " + this.getName() + " " + person.getFirstSecondName());
+        return ("Это " + toBe(true, (byte) -1) + PLACE.LENINGRAD + " " + this.getName() + " " + person.getFirstSecondName());
     }
 
 
     @Override
-    public String toBe(Boolean negative, byte time){
-        String output = new String();
+    public String toBe(Boolean negative, int time){
+        String output = "";
         if (negative & time < 0){
             output += "был ";
         } else {
@@ -54,7 +54,6 @@ public class Sculptor extends Profession implements Exists {
 
     @Override
     public String toString() {
-        Handler h = new Handler();
-        return (h.handle(this.getStatus()) + " " + this.getName());
+        return (this.getStatus() + " " + this.getName());
     }
 }

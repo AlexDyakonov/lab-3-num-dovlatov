@@ -1,10 +1,14 @@
-import Content.*;
 import Emotional.*;
 import Enums.*;
 import Interfaces.Adjectiveable;
+import Content.Boulder;
+import Content.Figure;
+import Content.Monument;
+import Content.Music;
 import Items.*;
 import People.*;
 import Professions.*;
+import UNUSED.Handler;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -45,12 +49,12 @@ public class Main {
 
         story += (m.faded() + dot(nn.laughPlace(PLACE.SILENCE)) + dotn(nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE)));
         story += (dot(human.laugh(false)) + dot(sculptor.toBePerson(viktorD)) + dotn(fear.change(PLACE.FACE, TIME.GRADUALLY, grimace)));
-        story += (h.handle(SPECIAL.WTF)); sculptor.setStatus(STATUS.UNHAPPY); story += (dot(sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()})));
+        story += (SPECIAL.WTF); sculptor.setStatus(STATUS.UNHAPPY); story += (dot(sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()})));
         story += (dot(chief.cover(new Cap[]{new Cap()})) + dotn(lenin.toSqueeze(new Cap())) + dotn(official.hide(TIME.HASTILY, (monument1), new Cloth(" серой "))));
         story += (dot(monument.toBePublished(TIME.MORNING)) + dotn(cap.removeCap(TIME.OVERNIGHT)) + dotn(me.disturbed(TIME.AGAIN))); monument1.setStatus(STATUS.NORMAL); sculptor.setStatus(STATUS.NORMAL);
-        story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + stoneCutter.takeOn(TIME.LATER) + "\n");
-        story += ((figure1) + "." + dot(boulder.toBeDescrition()) + h.handle(SPECIAL.NECESSARY) + h.handle(SPECIAL.ASTHEYSAY) + dot(nn.remove()) + h.handle(SPECIAL.ABSOLUTELY) + dotn(nn.copy(figure1)));
-        story += (h.handle(SPECIAL.FORTHIS));
+        story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + dotn(stoneCutter.takeOn(TIME.LATER)) +".\n");
+        story += ((figure1) + "." + dot(boulder.toBeDescrition()) + SPECIAL.NECESSARY + SPECIAL.ASTHEYSAY + dot(nn.remove()) + SPECIAL.ABSOLUTELY + dotn(nn.copy(figure1)));
+        story += (SPECIAL.FORTHIS);
         System.out.println(story);
 
         try(FileWriter outputText = new FileWriter(new File("E:\\code\\text-lab3\\src\\main\\resources", "output.txt"))){

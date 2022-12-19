@@ -1,4 +1,6 @@
-package Enums;
+package UNUSED;
+
+import Enums.PLACE;
 
 public class PlaceHandler extends Handler {
     public static String placeHandle(PLACE place){
@@ -15,7 +17,7 @@ public class PlaceHandler extends Handler {
             case NOWHERE ->
                     output += "нигде";
             case NOPLACE ->
-                    output += "нигде";
+                    output += "";
         }
         return output;
     }

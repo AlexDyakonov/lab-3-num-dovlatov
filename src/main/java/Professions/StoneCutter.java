@@ -1,6 +1,5 @@
 package Professions;
 
-import Enums.Handler;
 import Enums.TIME;
 
 public class StoneCutter extends Profession{
@@ -10,7 +9,6 @@ public class StoneCutter extends Profession{
     }
 
     public String takeOn(TIME time){
-        Handler h = new Handler();
-        return (h.handle(time) + " за дело берутся " + this.getName() + "ы.");
+        return (time + " за дело берутся " + this.getName() + "ы");
     }
 }
