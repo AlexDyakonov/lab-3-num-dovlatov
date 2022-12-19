@@ -1,8 +1,6 @@
 package People;
 
-import Interfaces.Laugh;
-
-public class Human extends Person implements Laugh {
+public class Human extends Person {
 
     public Human() {
         super("Лишь один человек ");

@@ -1,8 +1,8 @@
-package Items;
+package Materials;
 
 import Interfaces.Adjectiveable;
 
-public class Facture extends Item implements Adjectiveable {
+public class Facture extends Materials implements Adjectiveable {
     public Facture() {
         super("фактура");
     }

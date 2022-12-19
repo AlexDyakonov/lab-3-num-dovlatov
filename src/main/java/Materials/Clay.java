@@ -1,8 +1,8 @@
-package Items;
+package Materials;
 
 import Interfaces.Adjectiveable;
 
-public class Clay extends Item implements Adjectiveable {
+public class Clay extends Materials implements Adjectiveable {
     public Clay() {
         super("глина");
     }

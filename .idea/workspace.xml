@@ -4,28 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[FIXED] Handlers">
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Boulder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Boulder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Monument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Monument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/PLACE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/PLACE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/PlaceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/PlaceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Exists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Exists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Cap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Cap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Laugh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Statusable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Usable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Cap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Cap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Clay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Clay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Cloth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Facture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Gypsum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Gypsum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Marble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Wood.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/Me.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Me.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/NoName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/NoName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Molder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Molder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StringMethods/StringMeth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringMethods/StringMeth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +112,7 @@
       <workItem from="1671381360683" duration="21000" />
       <workItem from="1671387366450" duration="1320000" />
       <workItem from="1671469651953" duration="8000" />
-      <workItem from="1671483868938" duration="3974000" />
+      <workItem from="1671483868938" duration="5567000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -213,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671313919389</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[REMOVED] Handler, all notify of HANDLER&#10;[ADDED] Normal realisation of ENUM">
+      <created>1671489837750</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671489837750</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +263,8 @@
     <MESSAGE value="[MODIFIED] Cap class" />
     <MESSAGE value="[ADDED] Item: Clay&#10;[MODIFIED] Me, Molder, Monumet, TIME enum&#10;[REMOVED] ToBeMadeOf.java" />
     <MESSAGE value="[FIXED] Handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIXED] Handlers" />
+    <MESSAGE value="[REMOVED] Handler, all notify of HANDLER&#10;[ADDED] Normal realisation of ENUM" />
+    <MESSAGE value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
+    <option name="LAST_COMMIT_MESSAGE" value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
   </component>
 </project>

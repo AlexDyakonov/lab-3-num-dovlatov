@@ -5,7 +5,7 @@ import UNUSED.Handler;
 import Enums.PLACE;
 import Enums.STATUS;
 import Interfaces.Exists;
-import Items.Item;
+import Materials.Materials;
 import People.Person;
 
 import static StringMethods.StringMeth.capitalize;
@@ -17,7 +17,7 @@ public class Sculptor extends Profession implements Exists {
     }
 
 
-    public String make(Item[] items){
+    public String make(Materials[] items){
         String output = "";
         switch (items.length){
             case 1 -> output += items[0].getName();
@@ -27,7 +27,7 @@ public class Sculptor extends Profession implements Exists {
         return (" изваял " + output);
     }
 
-    public String sculptorMade(Item[] items){
+    public String sculptorMade(Materials[] items){
         return (this.toString() + make(items));
     }
 

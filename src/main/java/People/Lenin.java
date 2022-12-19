@@ -1,7 +1,6 @@
 package People;
 
-import Items.Cap;
-import Items.Item;
+import Materials.Cap;
 
 public class Lenin extends Person {
     public Lenin() {
@@ -12,6 +11,12 @@ public class Lenin extends Person {
         Arm leninArm = new Arm();
         return (Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist());
     }
+
+    @Override
+    public String laugh(boolean negative) {
+        return null;
+    }
+
     static class Arm{
         private final String fist = "кулак";
         public Arm() {

@@ -5,4 +5,8 @@ public class ViktorD extends Person {
         super("Виктор", "Дрыжаков");
     }
 
+    @Override
+    public String laugh(boolean negative) {
+        return null;
+    }
 }

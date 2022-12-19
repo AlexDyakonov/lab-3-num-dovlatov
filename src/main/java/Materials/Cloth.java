@@ -1,6 +1,6 @@
-package Items;
+package Materials;
 
-public class Cloth extends Item{
+public class Cloth extends Materials {
     private String color;
 
     public Cloth() {

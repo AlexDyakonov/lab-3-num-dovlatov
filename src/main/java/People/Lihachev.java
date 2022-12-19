@@ -6,4 +6,8 @@ public class Lihachev extends Person {
     }
 
 
+    @Override
+    public String laugh(boolean negative) {
+        return null;
+    }
 }

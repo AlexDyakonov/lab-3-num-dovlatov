@@ -1,8 +1,8 @@
-package Items;
+package Materials;
 
 import Enums.TIME;
 
-public class Cap extends Item{
+public class Cap extends Materials {
     public Cap() {
         super("кепка");
     }

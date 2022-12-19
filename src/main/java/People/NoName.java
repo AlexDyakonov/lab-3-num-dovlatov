@@ -2,10 +2,9 @@ package People;
 
 import Content.Substance;
 import Enums.*;
-import Interfaces.Laugh;
 
 
-public class NoName extends Person implements Laugh {
+public class NoName extends Person{
     private final boolean negative = true;
     public NoName() {
         super("", "");

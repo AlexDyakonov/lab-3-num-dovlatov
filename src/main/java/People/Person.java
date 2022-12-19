@@ -42,4 +42,5 @@ public abstract class Person {
     public String getFirstSecondName(){
         return (firstName + " " + secondName);
     }
+    public abstract String laugh(boolean negative);
 }

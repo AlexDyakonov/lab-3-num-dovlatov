@@ -1,9 +1,9 @@
-package Items;
+package Materials;
 
-public abstract class  Item {
+public abstract class Materials {
     private final String name;
 
-    public Item(String name) {
+    public Materials(String name) {
         this.name = name;
     }
 

@@ -1,7 +1,8 @@
-package Items;
+package Content;
 
-public class Machine extends Item{
+public class Machine extends Substance {
     public Machine() {
         super("машин");
     }
+
 }

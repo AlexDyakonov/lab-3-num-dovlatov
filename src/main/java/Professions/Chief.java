@@ -1,6 +1,6 @@
 package Professions;
 
-import Items.Item;
+import Materials.Materials;
 
 public class Chief extends Profession {
 
@@ -8,7 +8,7 @@ public class Chief extends Profession {
         super("вождь");
     }
 
-    public String cover(Item[] items){
+    public String cover(Materials[] items){
         Head h = new Head();
         return (h.cover(items) + this.getName());
     }
@@ -19,7 +19,7 @@ public class Chief extends Profession {
         public Head() {
         }
 
-        public String cover(Item[] items) {
+        public String cover(Materials[] items) {
             String output = new String();
             if (items.length == 1) {
                 output += ("Одна ");
