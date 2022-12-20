@@ -10,7 +10,9 @@ public enum SPECIAL {
     INGENERAL ("В общем"),
     OFC ("разумеется"),
     ABSOLUTELY ("Абсолютно точно"),
-    WTF ("Что же произошло?");
+    WTF ("Что же произошло?"),
+    SOCALLED (", так называемые"),
+    LIKE ("что-то вроде");
     private final String special;
     SPECIAL (String special) {
         this.special = special;

@@ -10,10 +10,11 @@ public enum TIME {
     OCCASIONALLY ("изредка"),
     HASTILY ("поспешно"),
     AGAIN ("снова"),
-    LATER ("Потом");
+    LATER ("Потом"),
+    AFTER ("Затем");
     private final String time;
-    TIME (String place) {
-        this.time = place;
+    TIME (String time) {
+        this.time = time;
     }
     public String getTime() {
         return time;

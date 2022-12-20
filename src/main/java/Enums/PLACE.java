@@ -6,6 +6,7 @@ public enum PLACE {
     SILENCE ("В наступившей тишине"),
     FACE ("на его лице"),
     NOWHERE ("нигде"),
+    STONE (" на камне "),
     NOPLACE ("");
 
     private final String place;
