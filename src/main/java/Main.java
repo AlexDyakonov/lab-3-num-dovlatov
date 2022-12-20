@@ -43,6 +43,8 @@ public class Main {
         Machine machine= new Machine();
         Notch notch = new Notch();
         Conture conture = new Conture();
+        Work work = new Work(new STATUS[]{STATUS.RESPONSIBLE, STATUS.ACCURACY});
+        Marble marble1 = new Marble();
 
         story += (m.faded() + dot(nn.laughPlace(PLACE.SILENCE)) + dotn(nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE)));
         story += (dot(human.laugh(false)) + dot(sculptor.toBePerson(viktorD)) + dotn(fear.change(PLACE.FACE, TIME.GRADUALLY, grimace)));
@@ -52,14 +54,12 @@ public class Main {
         story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + dotn(stoneCutter.takeOn(TIME.LATER)));
         story += ((figure1) + "." + dot(boulder.toBeDescrition()) + SPECIAL.NECESSARY + SPECIAL.ASTHEYSAY + dot(nn.remove()) + SPECIAL.ABSOLUTELY + dotn(nn.copy(figure1)));
         story += (dot(machine.thisMachine()) + dot(notch.toBeMade(machine, PLACE.STONE))) + dotn(conture.contureOf(monument1, STATUS.FUTURE));
-        story += (TIME.AFTER + dot(stoneCutter.beArmedWith(1)) + dot(stoneCutter.constrict(marble)) + dot(stoneCutter.takes(new int[]{2, 3, 4, 5})));
+        story += (TIME.AFTER + dot(stoneCutter.beArmedWith(1)) + dot(stoneCutter.constrict(marble)) + dot(stoneCutter.takes(new int[]{2, 3, 4, 5})) + dotn(work.finalStage(new Stage(STATUS.FINAL))));
+        story += (dot(stoneCutter.handle(new Surface(marble1))) + stoneCutter.incorrectMove() + dot((marble1).construction(new Branch(new Wood()))) + marble1.whatInside());
+        story += (marble1.othersInside(new Clot(new Facture()), new Branch(new Wood())) + dot(new Specie().whatInside()) +  dot(SPECIAL.ANDSOON.toString()) + SPECIAL.INGENERAL + work );
+        story += (dot(me.enlisted(stoneCutter)) + me.count(brigada) + dot(lihachev.whatProfession()) + dot(lihachev.haveFriendHelper(viktorC)) + dotn(human.beDrunkMaster(lihachev, viktorC)));
+        story += (lihachev.drink() + viktorC.drink() + lihachev.drinkRarely() + viktorC.drinkEveryday() + ".");
+
         System.out.println(story);
-
-        try(FileWriter outputText = new FileWriter(new File("E:\\code\\text-lab3\\src\\main\\resources", "output.txt"))){
-            outputText.write(story);
-        } catch (IOException e) {
-            System.out.println("Не удалось создать файл.");
-        }
-
     }
 }

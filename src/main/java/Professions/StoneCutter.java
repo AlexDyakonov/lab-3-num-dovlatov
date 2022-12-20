@@ -7,6 +7,8 @@ import Enums.TIME;
 import Exeptions.OutOfMachines;
 import Materials.Materials;
 
+import static StringMethods.StringMeth.capitalize;
+
 public class StoneCutter extends Profession{
 
     public StoneCutter() {
@@ -32,8 +34,15 @@ public class StoneCutter extends Profession{
         }
 
     }
+    public String incorrectMove(){
+        return "Одно неверное движение - и конец.";
+    }
 
     public String takeOn(TIME time){
         return (time + " за дело берутся " + this.getName() + "ы");
+    }
+
+    public String handle(Substance substance){
+        return (capitalize(getName()) + " обрабатывает " + substance.getAdj().beAdjective() + " " + substance.getName());
     }
 }

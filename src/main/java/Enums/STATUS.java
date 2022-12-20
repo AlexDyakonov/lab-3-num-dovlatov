@@ -6,7 +6,11 @@ public enum STATUS {
     HOPELESSNESS ("безысходности"),
     UNHAPPY ("Несчастный"),
     BROKEN ("бракованный"),
-    FUTURE ("будущего");
+    FUTURE ("будущего"),
+    FINAL ("завершающий"),
+    ACCURACY ("филигранная"),
+    RESPONSIBLE ("ответственная"),
+    DIFFERENT ("иной");
     private final String status;
     STATUS (String status) {
         this.status = status;

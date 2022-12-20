@@ -1,6 +1,5 @@
 package Emotional;
 
-import UNUSED.Handler;
 import Enums.STATUS;
 
 public abstract class Emotion {
@@ -23,10 +22,9 @@ public abstract class Emotion {
     @Override
     public String toString() {
         StringBuilder statusInfo = new StringBuilder();
-        Handler h = new Handler();
         for(STATUS item : status)
-            statusInfo.append(h.handle(item)).append(" ");
-        return (this.getName() + " " + statusInfo.toString());
+            statusInfo.append(item).append(" ");
+        return (this.getName() + " " + statusInfo);
     }
 
     public STATUS[] getStatus() {

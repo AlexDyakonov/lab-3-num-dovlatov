@@ -1,7 +1,6 @@
 package Professions;
 
 import Content.Substance;
-import UNUSED.Handler;
 import Enums.PLACE;
 import Enums.STATUS;
 import Interfaces.Exists;
@@ -36,8 +35,7 @@ public class Sculptor extends Profession implements Exists {
     }
 
     public String toBePerson(Person person){
-        Handler h = new Handler();
-        return ("Это " + toBe(true, (byte) -1) + PLACE.LENINGRAD + " " + this.getName() + " " + person.getFirstSecondName());
+        return ("Это " + toBe(true, -1) + PLACE.LENINGRAD + " " + this.getName() + " " + person.getFirstSecondName());
     }
 
 

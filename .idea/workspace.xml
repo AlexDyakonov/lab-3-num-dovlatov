@@ -4,22 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Conture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Notch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exeptions/OutOfMachines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeDefined.java" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] Exeption class, BeDefined interface, Notch content">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Branch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Clot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Specie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Surface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeDrunkard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeDrunkardMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeMaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/WhatInside.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Brigadier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/INSTRUMENTS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/INSTRUMENTS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/PLACE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/PLACE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Emotional/Emotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emotional/Emotion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/TIME.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Me.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Me.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Drunkard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/entity.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -100,7 +112,7 @@
       <workItem from="1671381360683" duration="21000" />
       <workItem from="1671387366450" duration="1320000" />
       <workItem from="1671469651953" duration="8000" />
-      <workItem from="1671483868938" duration="11435000" />
+      <workItem from="1671483868938" duration="17915000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -221,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671491271647</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[ADDED] Exeption class, BeDefined interface, Notch content">
+      <created>1671498100667</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671498100667</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +279,7 @@
     <MESSAGE value="[FIXED] Handlers" />
     <MESSAGE value="[REMOVED] Handler, all notify of HANDLER&#10;[ADDED] Normal realisation of ENUM" />
     <MESSAGE value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
-    <option name="LAST_COMMIT_MESSAGE" value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
+    <MESSAGE value="[ADDED] Exeption class, BeDefined interface, Notch content" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] Exeption class, BeDefined interface, Notch content" />
   </component>
 </project>
