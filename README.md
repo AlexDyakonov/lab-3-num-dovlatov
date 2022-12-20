@@ -48,5 +48,5 @@
 
 ## 5. UML
 <p align="center">
-  <img src="./src/main/resources/uml.jpg"  alt="uml"/>
+  <img src="./src/main/resources/lab3.svg"  alt="uml"/>
 </p>

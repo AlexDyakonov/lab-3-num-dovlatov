@@ -4,34 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="[ADDED] Exeption class, BeDefined interface, Notch content">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Clot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Specie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Surface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Content/Work.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeDrunkard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeDrunkardMaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/BeMaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/WhatInside.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Professions/Brigadier.java" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Project done">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lab3.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Emotional/Emotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emotional/Emotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Me.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Me.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Drunkard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/entity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/readyPhrases.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +20,7 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -59,24 +36,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/code/java_lessons&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/code/text-lab3/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\text-lab3\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -112,7 +93,7 @@
       <workItem from="1671381360683" duration="21000" />
       <workItem from="1671387366450" duration="1320000" />
       <workItem from="1671469651953" duration="8000" />
-      <workItem from="1671483868938" duration="17915000" />
+      <workItem from="1671483868938" duration="18404000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -240,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671498100667</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Project done">
+      <created>1671504976565</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671504976565</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +268,7 @@
     <MESSAGE value="[REMOVED] Handler, all notify of HANDLER&#10;[ADDED] Normal realisation of ENUM" />
     <MESSAGE value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
     <MESSAGE value="[ADDED] Exeption class, BeDefined interface, Notch content" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADDED] Exeption class, BeDefined interface, Notch content" />
+    <MESSAGE value="Project done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project done" />
   </component>
 </project>
