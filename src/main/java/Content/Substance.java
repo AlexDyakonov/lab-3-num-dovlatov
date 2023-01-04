@@ -40,6 +40,15 @@ public abstract class Substance {
     public void setStatus(STATUS status) {
         this.status = status;
     }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (adj != null ? adj.hashCode() : 0);
+        result = 31 * result + (status != null ? status.hashCode() : 0);
+        return result;
+    }
+
     @Override
     public boolean equals(Object obj) {
         return this.getClass() == obj.getClass();

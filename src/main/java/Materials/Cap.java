@@ -8,7 +8,7 @@ public class Cap extends Materials {
     }
 
     public static String getCap(byte amount){
-        String output = new String();
+        String output = "";
         switch (amount){
             case -1 ->
                 output += "Другую ";

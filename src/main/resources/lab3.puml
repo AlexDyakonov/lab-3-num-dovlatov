@@ -128,21 +128,6 @@ class Emotional.Grimace extends Emotional.Emotion {
 +Grimace(STATUS[] status)
 }
 
-
-enum Enums.INSTRUMENTS {
-Puncher("перфоратор"),
-dottedLineMachine("пунктир-машины"),
-Mallet ("test"),
-Scarpel ("test"),
-Hammer ("test"),
-Chisel ("test")
--final String instrument
-INSTRUMENTS (String instrument)
-+String getInstrument()
-+String toString()
-}
-
-
 enum Enums.PLACE {
 SQUARE ("вся площадь"),
 LENINGRAD ("ленинградский"),
