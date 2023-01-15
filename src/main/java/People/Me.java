@@ -8,8 +8,8 @@ public class Me extends Person implements Exists {
     public Me() {
         super("Я", "Меня");
     }
-    public String disturbed(TIME time){
-        return ("Мы " + time + " отвлеклись");
+    public void disturbed(TIME time){
+        System.out.println("Мы " + time + " отвлеклись");
     }
     public String enlisted(Profession profession){
         return (getSecondName() + " зачислили в бригаду " + profession.getName());

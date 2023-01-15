@@ -11,6 +11,10 @@ public enum STATUS {
     ACCURACY ("филигранная"),
     RESPONSIBLE ("ответственная"),
     FADED(" стихла"),
+    UNPUBLISHED(" не опубликован"),
+    PUBLISHED("опубликован"),
+    LITTERED("с лишним"),
+    UNLITTERED("убрать лишнее"),
     DIFFERENT ("иной");
     private final String status;
     STATUS (String status) {

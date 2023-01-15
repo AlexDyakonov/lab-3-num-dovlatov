@@ -12,12 +12,15 @@ public class NoName extends Person{
         super("", "");
     }
 
-    public String remove(){
-        return (getSecondName() + "убрать все лишнее");
+    public void remove(Substance substance){
+        substance.setStatus(STATUS.UNLITTERED);
+        System.out.print(SPECIAL.NECESSARY  + " ");
+        System.out.print(SPECIAL.ASTHEYSAY + " ");
+        System.out.print(getSecondName() + " " + substance.getStatus() + ".");
     }
 
-    public String copy(Substance substance){
-        return (" скопировать " + substance.getAdj().beAdjective() + " " + substance.getName());
+    public void copy(Substance substance){
+        System.out.print("Абсолютно скопировать " + substance.getAdj().beAdjective() + " " + substance.getName() + ". \n");
     }
 
     public void laughTimePlace(TIME time, PLACE where){

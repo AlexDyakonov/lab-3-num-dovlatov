@@ -1,5 +1,6 @@
 package Content;
 
+import Enums.SPECIAL;
 import Interfaces.Adjectiveable;
 import Interfaces.Exists;
 
@@ -10,8 +11,9 @@ public class Boulder extends Substance implements Exists {
     }
 
 
-    public String toBeDescrition() {
-        return (toBe(true, (byte) 0) + "бесформенная " + getAdj().beAdjective() + " " + this.getName());
+    public Substance toBeDescrition() {
+        System.out.print(toBe(true, (byte) 0) + "бесформенная " + getAdj().beAdjective() + " " + this.getName()+ ".");
+        return this;
     }
 
     @Override

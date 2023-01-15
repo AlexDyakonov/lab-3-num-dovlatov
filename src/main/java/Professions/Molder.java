@@ -12,9 +12,10 @@ public class Molder extends Profession{
         super("формовщик");
     }
 
-    public String cast(Substance substance, Monument monument, Materials item2){
+    public Substance cast(Substance substance, Monument monument, Materials item2){
         if (monument.equals(substance)){
-            return (capitalize(this.getName()) + " отливает её в " + item2.getName());
-        } else return "";
+            System.out.print(capitalize(this.getName()) + " отливает её в " + item2.getName() + ".");
+            return substance;
+        } else return null;
     }
 }

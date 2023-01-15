@@ -8,18 +8,20 @@ import static StringMethods.StringMeth.capitalize;
 
 public class Monument extends Substance implements Exists {
     public Monument() {
-        super("памятник", STATUS.NORMAL);
+        super("памятник", STATUS.UNPUBLISHED);
     }
     public Monument(STATUS status){
         super("монумент", status);
     }
 
-    public String toBePublished(TIME time){
-        return (time + " " + this.getName() + " "+ toBe(true, (byte) -1) + "вновь обнародован");
+    public void toBePublished(TIME time){
+        setStatus(STATUS.PUBLISHED);
+        System.out.print(time + " " + this.getName() + " "+ toBe(true, -1) + "вновь обнародован.");
     }
 
-    public String toBeBorn(){
-        return (capitalize(this.getName()) + " рождаются так");
+    public void toBeBorn(){
+        setStatus(STATUS.NORMAL);
+        System.out.print(capitalize(this.getName()) + " рождаются так.");
     }
 
     @Override

@@ -9,7 +9,6 @@ public enum SPECIAL {
     ANDSOON ("И так далее"),
     INGENERAL ("В общем"),
     OFC ("разумеется"),
-    ABSOLUTELY ("Абсолютно точно"),
     WTF ("Что же произошло?"),
     SOCALLED (", так называемые"),
     LIKE ("что-то вроде");

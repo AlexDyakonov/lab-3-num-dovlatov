@@ -10,10 +10,9 @@ public class Lenin extends Person {
         super("Ленин");
     }
 
-    public Substance toSqueeze(Cap cap){
+    public void toSqueeze(Cap cap){
         Arm leninArm = new Arm();
         System.out.print(Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist() + ".\n");
-        return new Monument(STATUS.BROKEN);
     }
 
     @Override

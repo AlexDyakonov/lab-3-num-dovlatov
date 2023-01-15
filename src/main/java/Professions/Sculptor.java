@@ -1,5 +1,6 @@
 package Professions;
 
+import Content.Monument;
 import Content.Substance;
 import Enums.PLACE;
 import Enums.SPECIAL;
@@ -31,8 +32,10 @@ public class Sculptor extends Profession implements Exists {
         System.out.print(this.toString() + make(items) + ".");
     }
 
-    public String sculptorMade(Substance substance){
-        return (capitalize(this.getName()) + " лепит " + substance.getAdj().beAdjective() + " " + substance.getName());
+    public Monument sculptorMade(Substance substance){
+        setStatus(STATUS.NORMAL);
+        System.out.print(capitalize(this.getName()) + " лепит " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
+        return new Monument();
     }
 
     public Person toBePerson(Person person){

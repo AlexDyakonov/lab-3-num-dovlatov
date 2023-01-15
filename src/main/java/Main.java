@@ -27,7 +27,6 @@ public class Main {
         Music m = new Music();
         Human human = new Human();
         Sculptor sculptor = new Sculptor(STATUS.NORMAL);
-        Monument monument = new Monument();
         Materials gypsum = new Gypsum();
         Materials marble = new Marble();
         Boulder boulder = new Boulder((Adjectiveable) marble);
@@ -52,10 +51,16 @@ public class Main {
         fear.change(PLACE.FACE, TIME.GRADUALLY, grimace);
         sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()});
         chief.cover(new Cap[]{new Cap()});
-        official.hide(TIME.HASTILY, lenin.toSqueeze(new Cap()), new Cloth(" серой "));
-        story += (dot(monument.toBePublished(TIME.MORNING)) + dotn(cap.removeCap(TIME.OVERNIGHT)) + dotn(me.disturbed(TIME.AGAIN))); monument1.setStatus(STATUS.NORMAL); sculptor.setStatus(STATUS.NORMAL);
-        story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + dotn(stoneCutter.takeOn(TIME.LATER)));
-        story += ((figure1) + "." + dot(boulder.toBeDescrition()) + SPECIAL.NECESSARY + SPECIAL.ASTHEYSAY + dot(nn.remove()) + SPECIAL.ABSOLUTELY + dotn(nn.copy(figure1)));
+        lenin.toSqueeze(new Cap());
+        official.hide(TIME.HASTILY, monument1, new Cloth(" серой "));
+        monument1.toBePublished(TIME.MORNING);
+        cap.removeCap(TIME.OVERNIGHT);
+        me.disturbed(TIME.AGAIN);
+        monument1.toBeBorn();
+        stoneCutter.takeOn(TIME.LATER, molder.cast(monument1, sculptor.sculptorMade(figure), gypsum));
+        System.out.print(figure1 + ".");
+        nn.remove(boulder.toBeDescrition());
+        nn.copy(figure1);
         story += (dot(machine.thisMachine()) + dot(notch.toBeMade(machine, PLACE.STONE))) + dotn(conture.contureOf(monument1, STATUS.FUTURE));
         story += (TIME.AFTER + dot(stoneCutter.beArmedWith(1)) + dot(stoneCutter.constrict(marble)) + dot(stoneCutter.takes(new int[]{2, 3, 4, 5})) + dotn(work.finalStage(new Stage(STATUS.FINAL))));
         story += (dot(stoneCutter.handle(new Surface(marble1))) + stoneCutter.incorrectMove() + dot((marble1).construction(new Branch(new Wood()))) + marble1.whatInside());

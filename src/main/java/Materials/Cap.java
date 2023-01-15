@@ -22,8 +22,8 @@ public class Cap extends Materials {
         return output;
     }
 
-    public String removeCap(TIME time){
-        return (time + " лишнюю " + this.getName() + " убрали");
+    public void removeCap(TIME time){
+        System.out.println(time + " лишнюю " + this.getName() + " убрали.");
     }
 
 }

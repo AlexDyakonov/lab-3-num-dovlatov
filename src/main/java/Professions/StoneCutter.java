@@ -39,8 +39,8 @@ public class StoneCutter extends Profession{
         return "Одно неверное движение - и конец.";
     }
 
-    public String takeOn(TIME time){
-        return (time + " за дело берутся " + this.getName() + "ы");
+    public void takeOn(TIME time, Substance substance){
+        System.out.print(time + " за дело берутся " + this.getName() + "ы.\n");
     }
 
     public String handle(Substance substance){
