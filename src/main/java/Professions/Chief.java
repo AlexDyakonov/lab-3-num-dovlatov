@@ -8,9 +8,9 @@ public class Chief extends Profession {
         super("вождь");
     }
 
-    public String cover(Materials[] items){
+    public void cover(Materials[] items){
         Head h = new Head();
-        return (h.cover(items) + this.getName());
+        System.out.print(h.cover(items) + this.getName() + ".");
     }
 
     static class Head {

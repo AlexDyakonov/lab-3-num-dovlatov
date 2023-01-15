@@ -11,14 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Fixed HashCode&amp;Equals in Substance.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exeptions/OutOfMachines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exeptions/OutOfMachines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lihachev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Me.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Me.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/NoName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/NoName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lab3.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lab3.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/lab3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lab3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/ViktorD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Chief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Official.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Official.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Sequence",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Alexander_PC/Desktop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexander_PC/Desktop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code\text-lab3\src\main\resources" />

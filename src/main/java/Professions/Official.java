@@ -9,8 +9,8 @@ public class Official extends Profession {
         super("Чиновники");
     }
 
-    public String hide(TIME time, Substance substance, Materials item){
-        return (this.getName() + " " + time + " укутали " + substance.getStatus() + " " + substance.getName() + " " + item.getName());
+    public void hide(TIME time, Substance substance, Materials item){
+        System.out.println(this.getName() + " " + time + " укутали " + substance.getStatus() + " " + substance.getName() + " " + item.getName() + ".");
     }
 
 

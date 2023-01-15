@@ -33,7 +33,6 @@ public class Me extends Person implements Exists {
 
 
     @Override
-    public String laugh(boolean negative) {
-        return null;
+    public void laugh(boolean negative) {
     }
 }

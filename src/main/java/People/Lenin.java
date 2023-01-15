@@ -1,5 +1,8 @@
 package People;
 
+import Content.Monument;
+import Content.Substance;
+import Enums.STATUS;
 import Materials.Cap;
 
 public class Lenin extends Person {
@@ -7,14 +10,15 @@ public class Lenin extends Person {
         super("Ленин");
     }
 
-    public String toSqueeze(Cap cap){
+    public Substance toSqueeze(Cap cap){
         Arm leninArm = new Arm();
-        return (Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist());
+        System.out.print(Cap.getCap((byte) -1) + getFirstName() + " сжимал в " + leninArm.getFist() + ".\n");
+        return new Monument(STATUS.BROKEN);
     }
 
     @Override
-    public String laugh(boolean negative) {
-        return null;
+    public void laugh(boolean negative) {
+        System.out.println(getFirstName() + " смеется.");
     }
 
     static class Arm{

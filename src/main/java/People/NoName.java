@@ -20,12 +20,15 @@ public class NoName extends Person{
         return (" скопировать " + substance.getAdj().beAdjective() + " " + substance.getName());
     }
 
-    public String laughTimePlace(TIME time, PLACE where){
-        return (time + " " + laugh(negative) + " " + where);
+    public void laughTimePlace(TIME time, PLACE where){
+        System.out.print(". " + time + " ");
+        laugh(negative);
+        System.out.print(" " + where + ". \n");
     }
 
     public void laughPlace(PLACE where){
-        System.out.print(dot(where + " " + this.getFirstName() + " " + laugh(negative)));
+        System.out.print((where + " " + getFirstName() + " "));
+        laugh(negative);
     }
     @Override
     public String getFirstName() {
@@ -33,10 +36,10 @@ public class NoName extends Person{
     }
 
     @Override
-    public String laugh(boolean negative) {
+    public void laugh(boolean negative) {
         if (!negative) {
-            return ("не смеяться");
+            System.out.print("не смеяться");
         } else
-            return ("смеяться");
+            System.out.print("смеяться");
     }
 }

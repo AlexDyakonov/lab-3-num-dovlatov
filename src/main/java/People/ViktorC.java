@@ -15,9 +15,9 @@ public class ViktorC extends Person implements BeDrunkardMaster {
     }
 
     @Override
-    public String laugh(boolean negative) {
-        return null;
+    public void laugh(boolean negative) {
     }
+
     @Override
     public Boolean beDrunkard() {
         return true;

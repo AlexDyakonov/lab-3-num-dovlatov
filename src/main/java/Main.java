@@ -33,9 +33,9 @@ public class Main {
         Boulder boulder = new Boulder((Adjectiveable) marble);
         Grimace grimace = new Grimace(new STATUS[]{STATUS.HOPELESSNESS, STATUS.INDIFFERENCE});
         Fear fear = new Fear();
+        Monument monument1 = new Monument(STATUS.BROKEN);
         Chief chief = new Chief();
         Official official = new Official();
-        Monument monument1 = new Monument(STATUS.BROKEN);
         Figure figure = new Figure(new Clay());
         Molder molder = new Molder();
         StoneCutter stoneCutter = new StoneCutter();
@@ -48,9 +48,11 @@ public class Main {
 
 
         nn.laughPlace(m.faded()); nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE);
-        story += (dot(human.laugh(false)) + dot(sculptor.toBePerson(viktorD)) + dotn(fear.change(PLACE.FACE, TIME.GRADUALLY, grimace)));
-        story += (SPECIAL.WTF); sculptor.setStatus(STATUS.UNHAPPY); story += (dot(sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()})));
-        story += (dot(chief.cover(new Cap[]{new Cap()})) + dotn(lenin.toSqueeze(new Cap())) + dotn(official.hide(TIME.HASTILY, (monument1), new Cloth(" серой "))));
+        human.toBeLaughPerson(sculptor.toBePerson(viktorD));
+        fear.change(PLACE.FACE, TIME.GRADUALLY, grimace);
+        sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()});
+        chief.cover(new Cap[]{new Cap()});
+        official.hide(TIME.HASTILY, lenin.toSqueeze(new Cap()), new Cloth(" серой "));
         story += (dot(monument.toBePublished(TIME.MORNING)) + dotn(cap.removeCap(TIME.OVERNIGHT)) + dotn(me.disturbed(TIME.AGAIN))); monument1.setStatus(STATUS.NORMAL); sculptor.setStatus(STATUS.NORMAL);
         story += (dot(monument1.toBeBorn()) + dot(sculptor.sculptorMade(figure)) + dot(molder.cast(monument1, monument, gypsum)) + dotn(stoneCutter.takeOn(TIME.LATER)));
         story += ((figure1) + "." + dot(boulder.toBeDescrition()) + SPECIAL.NECESSARY + SPECIAL.ASTHEYSAY + dot(nn.remove()) + SPECIAL.ABSOLUTELY + dotn(nn.copy(figure1)));

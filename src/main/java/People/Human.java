@@ -3,6 +3,8 @@ package People;
 import Enums.SPECIAL;
 import Interfaces.BeDrunkardMaster;
 
+import static StringMethods.StringMeth.dot;
+
 public class Human extends Person {
 
     public Human() {
@@ -15,12 +17,16 @@ public class Human extends Person {
         } else return "";
     }
 
+    public void toBeLaughPerson(Person person){
+        laugh(false);
+    }
+
     @Override
-    public String laugh(boolean negative) {
+    public void laugh(boolean negative) {
         if (!negative) {
-            return (this.getFirstName() + "не смеяться");
+            System.out.print(dot(getFirstName() + "не смеяться"));
         } else
-            return (this.getFirstName() + "смеяться");
+            System.out.print(dot(getFirstName() + "смеяться"));
     }
 }
 
