@@ -3,6 +3,7 @@ package Professions;
 import Content.Machine;
 import Content.Substance;
 import Enums.SPECIAL;
+import Enums.STATUS;
 import Enums.TIME;
 import Exeptions.OutOfMachines;
 import Materials.Materials;
@@ -26,7 +27,7 @@ public class StoneCutter extends Profession{
     public String takes(int[] instruments){
         try {
             if (instruments.length > Machine.machines.length){
-                throw new OutOfMachines();
+                throw new OutOfMachines("Недостаточно аппаратов.");
             }
             return ("Берется за" + Machine.machines[instruments[0]] + " и " + Machine.machines[instruments[1]] +"(" + SPECIAL.LIKE + Machine.machines[instruments[2]] + " и " + Machine.machines[instruments[3]] +")");
         } catch (OutOfMachines e) {
@@ -43,6 +44,7 @@ public class StoneCutter extends Profession{
     }
 
     public String handle(Substance substance){
+        substance.setStatus(STATUS.NORMAL); // добавить изменения статуса сабстанса
         return (capitalize(getName()) + " обрабатывает " + substance.getAdj().beAdjective() + " " + substance.getName());
     }
 }

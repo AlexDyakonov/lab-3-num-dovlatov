@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="text-lab3:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Project done">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lab3.puml" afterDir="false" />
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Fixed HashCode&amp;Equals in Substance.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exeptions/OutOfMachines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exeptions/OutOfMachines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/NoName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/NoName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lab3.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lab3.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lab3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lab3.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/code/text-lab3/src/main/resources",
+    "last_opened_file_path": "C:/Users/Alexander_PC/Desktop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,7 +62,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +104,18 @@
       <workItem from="1671381360683" duration="21000" />
       <workItem from="1671387366450" duration="1320000" />
       <workItem from="1671469651953" duration="8000" />
-      <workItem from="1671483868938" duration="18404000" />
+      <workItem from="1671483868938" duration="18771000" />
+      <workItem from="1671603615300" duration="745000" />
+      <workItem from="1671636026581" duration="987000" />
+      <workItem from="1671655886491" duration="15000" />
+      <workItem from="1671656323197" duration="270000" />
+      <workItem from="1672315604482" duration="981000" />
+      <workItem from="1672700727896" duration="948000" />
+      <workItem from="1672822963428" duration="214000" />
+      <workItem from="1672824071262" duration="137000" />
+      <workItem from="1672836925374" duration="676000" />
+      <workItem from="1672855484639" duration="1463000" />
+      <workItem from="1673719299173" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -228,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671504976565</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added UML">
+      <created>1671505252587</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671505252587</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed HashCode&amp;Equals in Substance.java">
+      <created>1672824202672</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672824202672</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +305,8 @@
     <MESSAGE value="[REMOVED] Not used Interfaces&#10;[ADDED] abstract method laugh&#10;[RENAMED] Item -&gt; Materials" />
     <MESSAGE value="[ADDED] Exeption class, BeDefined interface, Notch content" />
     <MESSAGE value="Project done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project done" />
+    <MESSAGE value="Added UML" />
+    <MESSAGE value="Fixed HashCode&amp;Equals in Substance.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed HashCode&amp;Equals in Substance.java" />
   </component>
 </project>

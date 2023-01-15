@@ -46,7 +46,8 @@ public class Main {
         Work work = new Work(new STATUS[]{STATUS.RESPONSIBLE, STATUS.ACCURACY});
         Marble marble1 = new Marble();
 
-        story += (m.faded() + dot(nn.laughPlace(PLACE.SILENCE)) + dotn(nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE)));
+
+        nn.laughPlace(m.faded()); nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE);
         story += (dot(human.laugh(false)) + dot(sculptor.toBePerson(viktorD)) + dotn(fear.change(PLACE.FACE, TIME.GRADUALLY, grimace)));
         story += (SPECIAL.WTF); sculptor.setStatus(STATUS.UNHAPPY); story += (dot(sculptor.sculptorMade(new Cap[]{new Cap(), new Cap()})));
         story += (dot(chief.cover(new Cap[]{new Cap()})) + dotn(lenin.toSqueeze(new Cap())) + dotn(official.hide(TIME.HASTILY, (monument1), new Cloth(" серой "))));

@@ -10,6 +10,7 @@ public enum STATUS {
     FINAL ("завершающий"),
     ACCURACY ("филигранная"),
     RESPONSIBLE ("ответственная"),
+    FADED(" стихла"),
     DIFFERENT ("иной");
     private final String status;
     STATUS (String status) {

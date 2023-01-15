@@ -3,6 +3,8 @@ package People;
 import Content.Substance;
 import Enums.*;
 
+import static StringMethods.StringMeth.dot;
+
 
 public class NoName extends Person{
     private final boolean negative = true;
@@ -22,8 +24,8 @@ public class NoName extends Person{
         return (time + " " + laugh(negative) + " " + where);
     }
 
-    public String laughPlace(PLACE where){
-        return (where + " " + this.getFirstName() + " " + laugh(negative));
+    public void laughPlace(PLACE where){
+        System.out.print(dot(where + " " + this.getFirstName() + " " + laugh(negative)));
     }
     @Override
     public String getFirstName() {

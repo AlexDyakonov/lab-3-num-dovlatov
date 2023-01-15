@@ -1,6 +1,11 @@
 package Exeptions;
 
 public class OutOfMachines extends Exception{
-    public OutOfMachines() {
+    public OutOfMachines(String message) {
+        super(message);
+    }
+
+    public OutOfMachines(String message, Throwable cause) {
+        super(message, cause);
     }
 }
