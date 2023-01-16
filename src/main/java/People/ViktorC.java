@@ -10,8 +10,8 @@ public class ViktorC extends Person implements BeDrunkardMaster {
         super("Виктор", "Цыпин");
     }
 
-    public String drinkEveryday() {
-        return (getSecondName() + "y опохмеляться " + TIME.OPPORTUNITY);
+    public void drink(TIME time) {
+        System.out.print(getSecondName() + "y опохмеляться " + time + ".");
     }
 
     @Override
@@ -24,8 +24,8 @@ public class ViktorC extends Person implements BeDrunkardMaster {
     }
 
     @Override
-    public String drink() {
-        return "a " + getSecondName() + " страдал хроническими запоями.";
+    public void drink() {
+        System.out.print(getSecondName() + " страдал хроническими запоями.");
     }
 
     @Override

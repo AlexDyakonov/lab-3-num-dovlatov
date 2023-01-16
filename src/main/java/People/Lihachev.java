@@ -5,22 +5,31 @@ import Interfaces.BeDrunkardMaster;
 import Professions.Brigadier;
 import Professions.Profession;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Lihachev extends Person implements BeDrunkardMaster {
     private final Profession profession;
+    private final Set<Person> friendSet;
     public Lihachev() {
         super("Осип", "Лихачев");
         this.profession = new Brigadier();
+        this.friendSet = new HashSet<>();
+        friendSet.add(new ViktorC());
     }
-    public String haveFriendHelper(Person person){
-        return ("Его помощника и друга - " + getFirstSecondName());
+    public void checkFriendList(){
+        for (Person person : friendSet){
+            System.out.print("Его помощника и друга - " + person.getFirstSecondName() + ".");
+        }
     }
 
-    public String whatProfession(){
-        return (profession.getName() + " звали " + getFirstSecondName());
+    public Profession whatProfession(){
+        System.out.print(profession.getName() + " звали " + getFirstSecondName() + ".");
+        return profession;
     }
 
-    public String drinkRarely() {
-        return ("Что не мешало " + getSecondName() + "y " + TIME.OCCASIONALLY + " запивать, а ");
+    public void drink(TIME time) {
+        System.out.print("Что не мешало " + getSecondName() + "y " + time + " запивать, а ");
     }
 
     @Override
@@ -33,8 +42,8 @@ public class Lihachev extends Person implements BeDrunkardMaster {
     }
 
     @Override
-    public String drink() {
-        return ("При этом " + getSecondName() + " выпивал  " + TIME.EVERYDAY +", ");
+    public void drink() {
+        System.out.print("При этом " + getSecondName() + " выпивал  " + TIME.EVERYDAY +".");
     }
 
     @Override

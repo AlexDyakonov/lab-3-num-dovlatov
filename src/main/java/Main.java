@@ -6,6 +6,9 @@ import Materials.*;
 import People.*;
 import Professions.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static StringMethods.StringMeth.*;
 
 
@@ -18,7 +21,9 @@ public class Main {
         ViktorD viktorD = new ViktorD();
         Cap cap = new Cap();
         Me me = new Me();
-        Person[] brigada = {me,  lihachev, viktorC};
+        Set<Person> brigada = new HashSet<>();
+        brigada.add(lihachev);
+        brigada.add(viktorC);
         NoName nn = new NoName();
         Music m = new Music();
         Human human = new Human();
@@ -63,10 +68,14 @@ public class Main {
         work.finalStage(new Stage(STATUS.FINAL));
         stoneCutter.handle(new Surface(marble1)).incorrectMove();
         (marble1).consitsOf(new Branch(new Wood()));
-        System.out.println(work);
-        story += (dot(me.enlisted(stoneCutter)) + me.count(brigada) + dot(lihachev.whatProfession()) + dot(lihachev.haveFriendHelper(viktorC)) + dotn(human.beDrunkMaster(lihachev, viktorC)));
-        story += (lihachev.drink() + viktorC.drink() + lihachev.drinkRarely() + viktorC.drinkEveryday() + ".");
-
-        System.out.println(story);
+        System.out.print(work);
+        me.countPersonInBrigada(me.enlistedToBrigada(stoneCutter, brigada));
+        lihachev.whatProfession();
+        lihachev.checkFriendList();
+        human.beDrunkMaster(lihachev, viktorC);
+        lihachev.drink();
+        viktorC.drink();
+        lihachev.drink(TIME.OCCASIONALLY);
+        viktorC.drink(TIME.OPPORTUNITY);
     }
 }

@@ -10,10 +10,10 @@ public class Human extends Person {
         super("Лишь один человек ", "Оба");
     }
 
-    public String beDrunkMaster(BeDrunkardMaster dm1, BeDrunkardMaster dm2){
+    public void beDrunkMaster(BeDrunkardMaster dm1, BeDrunkardMaster dm2){
         if (dm1.beDrunkardMaster() == dm2.beDrunkardMaster()){
-            return "Оба были мастерами своего дела и разумеется горькими пьяницами";
-        } else return "";
+            System.out.println("Оба были мастерами своего дела и разумеется горькими пьяницами");
+        } else System.out.println("");
     }
 
     public void toBeLaughPerson(Person person){
