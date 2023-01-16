@@ -1,6 +1,5 @@
 package People;
 
-import Enums.SPECIAL;
 import Interfaces.BeDrunkardMaster;
 
 import static StringMethods.StringMeth.dot;
@@ -13,7 +12,7 @@ public class Human extends Person {
 
     public String beDrunkMaster(BeDrunkardMaster dm1, BeDrunkardMaster dm2){
         if (dm1.beDrunkardMaster() == dm2.beDrunkardMaster()){
-            return "Оба были мастерами своего дела и " + SPECIAL.OFC + " горькими пьяницами";
+            return "Оба были мастерами своего дела и разумеется горькими пьяницами";
         } else return "";
     }
 

@@ -6,10 +6,6 @@ import Materials.*;
 import People.*;
 import Professions.*;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
 import static StringMethods.StringMeth.*;
 
 
@@ -61,10 +57,13 @@ public class Main {
         System.out.print(figure1 + ".");
         nn.remove(boulder.toBeDescrition());
         nn.copy(figure1);
-        story += (dot(machine.thisMachine()) + dot(notch.toBeMade(machine, PLACE.STONE))) + dotn(conture.contureOf(monument1, STATUS.FUTURE));
-        story += (TIME.AFTER + dot(stoneCutter.beArmedWith(1)) + dot(stoneCutter.constrict(marble)) + dot(stoneCutter.takes(new int[]{2, 3, 4, 5})) + dotn(work.finalStage(new Stage(STATUS.FINAL))));
-        story += (dot(stoneCutter.handle(new Surface(marble1))) + stoneCutter.incorrectMove() + dot((marble1).construction(new Branch(new Wood()))) + marble1.whatInside());
-        story += (marble1.othersInside(new Clot(new Facture()), new Branch(new Wood())) + dot(new Specie().whatInside()) +  dot(SPECIAL.ANDSOON.toString()) + SPECIAL.INGENERAL + work );
+        machine.thisMachine(0).makeNotch(PLACE.STONE);
+        conture.contureOf(monument1, STATUS.FUTURE);
+        stoneCutter.beArmedWith(1, TIME.AFTER).constrict(marble).takes(new int[]{2, 3, 4, 5});
+        work.finalStage(new Stage(STATUS.FINAL));
+        stoneCutter.handle(new Surface(marble1)).incorrectMove();
+        (marble1).consitsOf(new Branch(new Wood()));
+        System.out.println(work);
         story += (dot(me.enlisted(stoneCutter)) + me.count(brigada) + dot(lihachev.whatProfession()) + dot(lihachev.haveFriendHelper(viktorC)) + dotn(human.beDrunkMaster(lihachev, viktorC)));
         story += (lihachev.drink() + viktorC.drink() + lihachev.drinkRarely() + viktorC.drinkEveryday() + ".");
 

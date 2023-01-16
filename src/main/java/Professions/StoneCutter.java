@@ -2,7 +2,6 @@ package Professions;
 
 import Content.Machine;
 import Content.Substance;
-import Enums.SPECIAL;
 import Enums.STATUS;
 import Enums.TIME;
 import Exeptions.OutOfMachines;
@@ -12,39 +11,52 @@ import static StringMethods.StringMeth.capitalize;
 
 public class StoneCutter extends Profession{
 
+    private int machineNum;
+
     public StoneCutter() {
         super("камнерез");
     }
 
-    public String beArmedWith(int machineNum){
-        return (" " + getName() + " вооружается небольшим " + Machine.machines[machineNum]);
+    public StoneCutter beArmedWith(int machineNum, TIME time){
+        setMachineNum(machineNum);
+        System.out.print(time + " " + getName() + " вооружается небольшим " + Machine.machines[machineNum] + ".");
+        return this;
     }
 
-    public String constrict(Materials materials){
-        return ("Стесывает грубые напластования " + materials.getName());
+    public StoneCutter constrict(Materials materials){
+        System.out.print("Стесывает грубые напластования " + materials.getName() + ".");
+        return this;
     }
 
-    public String takes(int[] instruments){
+    public void takes(int[] instruments){
         try {
             if (instruments.length > Machine.machines.length){
                 throw new OutOfMachines("Недостаточно аппаратов.");
             }
-            return ("Берется за" + Machine.machines[instruments[0]] + " и " + Machine.machines[instruments[1]] +"(" + SPECIAL.LIKE + Machine.machines[instruments[2]] + " и " + Machine.machines[instruments[3]] +")");
+            System.out.print("Берется за" + Machine.machines[instruments[0]] + " и " + Machine.machines[instruments[1]] +"(что-то вроде " + Machine.machines[instruments[2]] + " и " + Machine.machines[instruments[3]] +").");
         } catch (OutOfMachines e) {
-            return "";
+            System.out.println();
         }
 
     }
-    public String incorrectMove(){
-        return "Одно неверное движение - и конец.";
+    public void incorrectMove(){
+        System.out.println("Одно неверное движение - и конец.");
     }
 
     public void takeOn(TIME time, Substance substance){
         System.out.print(time + " за дело берутся " + this.getName() + "ы.\n");
     }
 
-    public String handle(Substance substance){
-        substance.setStatus(STATUS.NORMAL); // добавить изменения статуса сабстанса
-        return (capitalize(getName()) + " обрабатывает " + substance.getAdj().beAdjective() + " " + substance.getName());
+    public StoneCutter handle(Substance substance){
+        substance.setStatus(STATUS.NORMAL);
+        System.out.print(capitalize(getName()) + " обрабатывает " + substance.getAdj().beAdjective() + " " + substance.getName() + ".");
+        return this;
+    }
+    public int getMachineNum() {
+        return machineNum;
+    }
+
+    public void setMachineNum(int machineNum) {
+        this.machineNum = machineNum;
     }
 }

@@ -1,11 +1,11 @@
 package Materials;
 
+import Content.Branch;
+import Content.Clot;
+import Content.Specie;
 import Content.Substance;
-import Enums.SPECIAL;
 import Interfaces.Adjectiveable;
 import Interfaces.WhatInside;
-
-import static StringMethods.StringMeth.capitalize;
 
 public class  Marble extends Materials implements Adjectiveable, WhatInside {
 
@@ -13,14 +13,19 @@ public class  Marble extends Materials implements Adjectiveable, WhatInside {
         super("мрамор");
     }
 
-    public String construction(Substance substance){
-        return ("Ведь строение " + getName() +"a подобно " + substance.getAdj().beAdjective()+ " " + substance.getName());
+    public void consitsOf(Substance substance){
+        System.out.print("Ведь строение " + getName() +"a подобно " + substance.getAdj().beAdjective()+ " " + substance.getName() + ".");
+        whatInside();
+        othersInside(new Clot(new Facture()), new Branch(new Wood()));
+        System.out.print(new Specie().whatInside() + ".");
     }
 
 
 
-    public String othersInside(Substance substance, Substance substance2){
-        return ("Есть прочные " + substance.getAdj().beAdjective() + " " + substance.getName() + ".(" + capitalize(SPECIAL.LIKE.toString()) +" " + substance2.getAdj().beAdjective() + " " + substance2.getName() + ".)");
+    public Substance[] othersInside(Substance substance, Substance substance2){
+        Substance[] substancesInside = {substance, substance2};
+        System.out.print("Есть прочные " + substance.getAdj().beAdjective() + " " + substance.getName() + ".( Что-то вроде " + substance2.getAdj().beAdjective() + " " + substance2.getName() + ".)");
+        return substancesInside;
     }
 
     @Override

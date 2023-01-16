@@ -14,9 +14,7 @@ public class NoName extends Person{
 
     public void remove(Substance substance){
         substance.setStatus(STATUS.UNLITTERED);
-        System.out.print(SPECIAL.NECESSARY  + " ");
-        System.out.print(SPECIAL.ASTHEYSAY + " ");
-        System.out.print(getSecondName() + " " + substance.getStatus() + ".");
+        System.out.print("Необходимо, как говорится, " + getSecondName() + " " + substance.getStatus() + ".");
     }
 
     public void copy(Substance substance){

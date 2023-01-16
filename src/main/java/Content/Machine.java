@@ -1,29 +1,39 @@
 package Content;
 
-import Enums.SPECIAL;
+import Enums.PLACE;
 
 
 public class Machine extends Substance {
-    public static final String[] machines = new String[]{" пунктир машины", " перфоратор ", " киянка", " скарпель ", " молоток", "зубило" };
+    public static final String[] machines = new String[]{" пунктир машины", " перфоратор", " киянка", " скарпель ", " молоток", "зубило" };
 
     public Machine() {
         super("специальные устройства ");
     }
 
-    public String named(int n){
+    public void named(int n){
         try {
-            return (SPECIAL.SOCALLED + machines[n]);
+            System.out.print(", так называемые " + machines[n]);
         } catch (Exception e){
-            return "";
+            System.out.println();
         }
     }
 
-    public String thisMachine(){
-        return (SPECIAL.FORTHIS + " имеются " +getName() + named(0));
+    public Machine thisMachine(int numOfMachine){
+        System.out.print("Для этого имеются " +getName() + " ");
+        named(numOfMachine);
+        System.out.print(".");
+        return this;
     }
 
-    public String withHelp(){
-        return ("С помощью этих" + machines[0]);
+    public void withHelp(){
+        System.out.print("С помощью этих" + machines[0]);
+    }
+
+    public Notch makeNotch (PLACE place){
+        Notch notch = new Notch();
+        withHelp();
+        System.out.print(place + "делаются " + notch.getName() + ".");
+        return notch;
     }
 
     @Override

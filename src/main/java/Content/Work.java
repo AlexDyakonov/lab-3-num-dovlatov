@@ -19,12 +19,12 @@ public class Work extends Substance{
         this.statuses = statuses;
     }
 
-    public String finalStage(Stage stage) {
+    public void finalStage(Stage stage) {
         String output = "";
         for (STATUS item : getStatuses()) {
             output += (item + ", ");
         }
-        return (stage.await() + " "+ output + getName());
+        System.out.println(stage.await() + " "+ output + getName());
     }
 
     @Override
@@ -33,6 +33,6 @@ public class Work extends Substance{
         for (STATUS item : getStatuses()) {
             output += (item + " ");
         }
-        return ( " " + getName() + " эта " + output + ".\n");
+        return ( "В общем " + getName() + " эта " + output + ".\n");
     }
 }

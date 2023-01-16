@@ -9,7 +9,6 @@ public class Specie extends Substance implements WhatInside {
         super("породы", STATUS.DIFFERENT);
     }
 
-
     @Override
     public String whatInside() {
         return ("Есть многочисленные вкрапления " + getStatus() + " " + getName());

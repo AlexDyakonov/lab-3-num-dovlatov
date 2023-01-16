@@ -3,7 +3,6 @@ package Professions;
 import Content.Monument;
 import Content.Substance;
 import Enums.PLACE;
-import Enums.SPECIAL;
 import Enums.STATUS;
 import Interfaces.Exists;
 import Materials.Materials;

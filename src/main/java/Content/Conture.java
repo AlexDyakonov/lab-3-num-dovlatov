@@ -9,9 +9,9 @@ public class Conture extends Substance implements Exists, BeDefined {
         super("контуры ");
     }
 
-    public String contureOf(Substance substance, STATUS status){
+    public void contureOf(Substance substance, STATUS status){
         substance.setStatus(status);
-        return (toBe(true, 1) + toBeDefined() + getName() + substance.getStatus() + " " + substance.getName());
+        System.out.println(toBe(true, 1) + toBeDefined() + getName() + substance.getStatus() + " " + substance.getName() + ".");
     }
 
     @Override

@@ -9,18 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Changed logic of lab&#10;VOID methods">
+    <list default="true" id="a8e7d3f3-ed84-4681-8bfb-2c6741d1dab2" name="Changes" comment="Fixed a lot of meth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Content/Boulder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Boulder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Monument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Monument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/STATUS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Conture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Conture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Notch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Notch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Specie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Specie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Content/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Content/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Emotional/Fear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/SPECIAL.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Materials/Cap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Cap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Lenin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Lenin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/People/Me.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Me.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Materials/Marble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/People/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/People/NoName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/NoName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Molder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Molder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/Sculptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Professions/StoneCutter.java" afterDir="false" />
     </list>
@@ -120,6 +122,8 @@
       <workItem from="1672836925374" duration="676000" />
       <workItem from="1672855484639" duration="1463000" />
       <workItem from="1673719299173" duration="6725000" />
+      <workItem from="1673823332988" duration="32000" />
+      <workItem from="1673846505444" duration="3777000" />
     </task>
     <task id="LOCAL-00001" summary="Added project">
       <created>1670707948917</created>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672824202672</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed a lot of meth">
+      <created>1673823356939</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1673823356940</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +322,7 @@
     <MESSAGE value="Project done" />
     <MESSAGE value="Added UML" />
     <MESSAGE value="Fixed HashCode&amp;Equals in Substance.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed HashCode&amp;Equals in Substance.java" />
+    <MESSAGE value="Fixed a lot of meth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a lot of meth" />
   </component>
 </project>
