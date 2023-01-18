@@ -1,503 +1,364 @@
 @startuml
-class Content.Boulder extends Content.Substance implements Interfaces.Exists {
-+Boulder(Adjectiveable adj)
-+void toBeDescrition()
-+void toBe(Boolean negative, int time)
-}
-
-
-class Content.Branch extends Content.Substance {
-+Branch(Adjectiveable adj)
-}
-
-
-class Content.Clot extends Content.Substance {
-+Clot(Adjectiveable adj)
-}
-
-
-class Content.Conture extends Content.Substance implements Interfaces.Exists, Interfaces.BeDefined {
-+Conture()
-+void contureOf(Substance substance, STATUS status)
-+void toBe(Boolean negative, int time)
-+void toBeDefined()
-}
-
-
-class Content.Figure extends Content.Substance implements Interfaces.Exists {
-+Figure(Adjectiveable adj)
-+String toString()
-+void toBe(Boolean negative, int time)
-}
-
-
-class Content.Machine extends Content.Substance {
-+static final String[] machines = new String[]
-
-+Machine()
-+void named(int n)
-+void thisMachine()
-+void withHelp()
-+String toString()
-}
-
-
-class Content.Monument extends Content.Substance implements Interfaces.Exists {
-+Monument()
-+Monument(STATUS status)
-+void toBePublished(TIME time)
-+void toBeBorn()
-+void toBe(Boolean negative, int time)
-}
-
-
-class Content.Music extends Content.Substance {
-+Music()
-+String faded()
-}
-
-
-class Content.Notch extends Content.Substance {
-+Notch()
-+void toBeMade(Machine machine, PLACE place)
-}
-
-
-class Content.Specie extends Content.Substance implements Interfaces.WhatInside {
-+Specie()
-+void whatInside()
-}
-
-
-class Content.Stage extends Content.Substance {
-+Stage(STATUS status)
-+void await()
-}
-
-
-abstract class Content.Substance {
--final String name
--Adjectiveable adj
--STATUS status
-+Substance(String name)
-+Substance(String name, STATUS status)
-+Substance(String name, Adjectiveable adj)
-+String getName()
-+Adjectiveable getAdj()
-+STATUS getStatus()
-+void setStatus(STATUS status)
-+boolean equals(Object obj)
-}
-
-
-class Content.Surface extends Content.Substance {
-+Surface(Adjectiveable adj)
-}
-
-
-class Content.Work extends Content.Substance {
--STATUS[] statuses
-+Work( STATUS[] status)
-+STATUS[] getStatuses()
-+void setStatuses(STATUS[] statuses)
-+void finalStage(Stage stage)
-+String toString()
-}
-
-
-abstract class Emotional.Emotion {
--final String name
--STATUS[] status
-+Emotion(String name)
-+Emotion(String name, STATUS[] status)
-+String getName()
-+String toString()
-+STATUS[] getStatus()
-+void setStatus(STATUS[] status)
-}
-
-
-class Emotional.Fear extends Emotional.Emotion {
-+Fear()
-+Fear(STATUS[] status)
-+void change(PLACE place, TIME time, Emotion emotion)
-}
-Emotional.Fear -down[#AAA]-o Enums.STATUS
-
-class Emotional.Grimace extends Emotional.Emotion {
-+Grimace(STATUS[] status)
-}
-
-enum Enums.PLACE {
-SQUARE ("вся площадь"),
-LENINGRAD ("ленинградский"),
-SILENCE ("В наступившей тишине"),
-FACE ("на его лице"),
-NOWHERE ("нигде"),
-STONE (" на камне "),
-NOPLACE ("")
--final String place
-PLACE (String place)
-+String getPlace()
-+String toString()
-}
-
-
-enum Enums.SPECIAL {
-NECESSARY ("Необходимо"),
-ASTHEYSAY (", как говорится, "),
-FORTHIS ("Для этого"),
-THEN ("Затем"),
-SOMETHING ("Что-то вроде"),
-ANDSOON ("И так далее"),
-INGENERAL ("В общем"),
-OFC ("разумеется"),
-ABSOLUTELY ("Абсолютно точно"),
-WTF ("Что же произошло?"),
-SOCALLED (", так называемые"),
-LIKE ("что-то вроде")
--final String special
-SPECIAL (String special)
-+String getSpecial()
-+String toString()
-}
-
-
-enum Enums.STATUS {
-NORMAL (""),
-INDIFFERENCE ("безразличия"),
-HOPELESSNESS ("безысходности"),
-UNHAPPY ("Несчастный"),
-BROKEN ("бракованный"),
-FUTURE ("будущего"),
-FINAL ("завершающий"),
-ACCURACY ("филигранная"),
-RESPONSIBLE ("ответственная"),
-DIFFERENT ("иной")
--final String status
-STATUS (String status)
-+String getStatus()
-+String toString()
-}
-
-
-enum Enums.TIME {
-MINUTE ("Через минуту"),
-MORNING ("Наутро"),
-OVERNIGHT ("За ночь"),
-GRADUALLY ("постепенно"),
-EVERYDAY ("ежедневно"),
-OPPORTUNITY ("при каждом удобном случае"),
-OCCASIONALLY ("изредка"),
-HASTILY ("поспешно"),
-AGAIN ("снова"),
-LATER ("Потом"),
-AFTER ("Затем")
--final String time
-TIME (String time)
-+String getTime()
-+String toString()
-}
-
-
-class Exeptions.OutOfMachines extends Exception {
-+OutOfMachines()
-}
-
-
 interface Interfaces.Adjectiveable {
-+void beAdjective()
++ String beAdjective()
 }
-
-
-interface Interfaces.BeDefined {
-+void toBeDefined()
+class Materials.Marble {
++ void consitsOf(Substance)
++ Substance[] othersInside(Substance,Substance)
++ String beAdjective()
++ String whatInside()
 }
-
-
-interface Interfaces.BeDrunkard {
-+Boolean beDrunkard()
-+void drink()
+enum Enums.INSTRUMENTS {
++  Puncher
++  dottedLineMachine
++  Mallet
++  Scarpel
++  Hammer
++  Chisel
+- String instrument
++ String getInstrument()
++ String toString()
 }
-
-
-interface Interfaces.BeDrunkardMaster extends Interfaces.BeDrunkard, Interfaces.BeMaster {
-+boolean beDrunkardMaster()
+class Content.Boulder {
++ Substance toBeDescrition()
++ String toBe(Boolean,int)
 }
-
-
-interface Interfaces.BeMaster {
-+Boolean beMaster()
+class People.ViktorC {
++ void drink(TIME)
++ void laugh(boolean)
++ Boolean beDrunkard()
++ void drink()
++ Boolean beMaster()
++ boolean beDrunkardMaster()
 }
-
-
-interface Interfaces.Exists {
-void toBe(Boolean negative, int time)
+class Professions.StoneCutter {
+- int machineNum
++ StoneCutter beArmedWith(int,TIME)
++ StoneCutter constrict(Materials)
++ void takes(int[])
++ void incorrectMove()
++ void takeOn(TIME,Substance)
++ StoneCutter handle(Substance)
++ int getMachineNum()
++ void setMachineNum(int)
 }
-
-
-interface Interfaces.WhatInside {
-+void whatInside()
+class Content.Music {
++ PLACE faded()
 }
-
-
-class Main {
-+static void main(String[] args)
+class Professions.Official {
++ void hide(TIME,Substance,Materials)
 }
-Main -down[#AAA]-o People.Lenin
-Main -down[#AAA]-o People.Lihachev
-Main -down[#AAA]-o People.ViktorC
-Main -down[#AAA]-o People.ViktorD
-Main -down[#AAA]-o Materials.Cap
-Main -down[#AAA]-o People.Me
-Main -down[#AAA]-o People.NoName
-Main -down[#AAA]-o Content.Music
-Main -down[#AAA]-o People.Human
-Main -down[#AAA]-o Professions.Sculptor
-'!>10 Main -down[#AAA]-o Content.Monument
-'!>10 Main -down[#AAA]-o Materials.Gypsum
-'!>10 Main -down[#AAA]-o Materials.Marble
-'!>10 Main -down[#AAA]-o Content.Boulder
-'!>10 Main -down[#AAA]-o Emotional.Grimace
-'!>10 Main -down[#AAA]-o Enums.STATUS
-'!>10 Main -down[#AAA]-o Emotional.Fear
-'!>10 Main -down[#AAA]-o Professions.Chief
-'!>10 Main -down[#AAA]-o Professions.Official
-'!>10 Main -down[#AAA]-o Content.Monument
-'!>10 Main -down[#AAA]-o Content.Figure
-'!>10 Main -down[#AAA]-o Materials.Clay
-'!>10 Main -down[#AAA]-o Professions.Molder
-'!>10 Main -down[#AAA]-o Professions.StoneCutter
-'!>10 Main -down[#AAA]-o Content.Figure
-'!>10 Main -down[#AAA]-o Content.Machine
-'!>10 Main -down[#AAA]-o Content.Notch
-'!>10 Main -down[#AAA]-o Content.Conture
-'!>10 Main -down[#AAA]-o Content.Work
-'!>10 Main -down[#AAA]-o Enums.STATUS
-'!>10 Main -down[#AAA]-o Materials.Marble
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cap
-'!>10 Main -down[#AAA]-o Materials.Cloth
-'!>10 Main -down[#AAA]-o Content.Stage
-'!>10 Main -down[#AAA]-o Content.Surface
-'!>10 Main -down[#AAA]-o Content.Branch
-'!>10 Main -down[#AAA]-o Materials.Wood
-'!>10 Main -down[#AAA]-o Content.Clot
-'!>10 Main -down[#AAA]-o Materials.Facture
-'!>10 Main -down[#AAA]-o Content.Branch
-'!>10 Main -down[#AAA]-o Materials.Wood
-'!>10 Main -down[#AAA]-o Content.Specie
-
-class Materials.Materials.Cap extends Materials {
-+Cap()
-+static void getCap(byte amount)
-+void removeCap(TIME time)
+class Content.Notch {
 }
-
-
-class Materials.Materials.Clay extends Materials implements Interfaces.Adjectiveable {
-+Clay()
-+void beAdjective()
+class Content.Work {
+- STATUS[] statuses
++ STATUS[] getStatuses()
++ void setStatuses(STATUS[])
++ void finalStage(Stage)
++ String toString()
 }
-
-
-class Materials.Materials.Cloth extends Materials {
--String color
-+Cloth()
-+Cloth(String color)
-+String getColor()
-+void setColor(String color)
-+String getName()
+class Content.Branch {
 }
-
-
-class Materials.Materials.Facture extends Materials implements Interfaces.Adjectiveable {
-+Facture()
-+void beAdjective()
-}
-
-
-class Materials.Materials.Gypsum extends Materials implements Interfaces.Adjectiveable {
-+Gypsum()
-+void beAdjective()
-}
-
-
-class  Materials.Materials.Marble extends Materials implements Interfaces.Adjectiveable, Interfaces.WhatInside {
-+Marble()
-+void construction(Substance substance)
-+void othersInside(Substance substance, Substance substance2)
-+void beAdjective()
-+void whatInside()
-}
-
-
-abstract class Materials.Materials {
--final String name
-+Materials(String name)
-+String getName()
-}
-
-
-class Materials.Wood extends Materials.Materials implements Interfaces.Adjectiveable {
-+Wood()
-+void beAdjective()
-}
-
-
-class People.Human extends People.Person {
-+Human()
-+void beDrunkMaster(BeDrunkardMaster dm1, BeDrunkardMaster dm2)
-+void laugh(boolean negative)
-}
-
-
-class People.Lenin extends People.Person {
-+Lenin()
-+void toSqueeze(Cap cap)
-+void laugh(boolean negative)
-static class Arm
-}
-
-
-class People.Lihachev extends People.Person implements Interfaces.BeDrunkardMaster {
--final Profession profession
-+Lihachev()
-+void haveFriendHelper(Person person)
-+void whatProfession()
-+void drinkRarely()
-+void laugh(boolean negative)
-+Boolean beDrunkard()
-+void drink()
-+Boolean beMaster()
-+boolean beDrunkardMaster()
-}
-People.Lihachev -down[#AAA]-o Professions.Brigadier
-
-class People.Me extends People.Person implements Interfaces.Exists {
-+Me()
-+void disturbed(TIME time)
-+void enlisted(Profession profession)
-+void count(Person[] brigada)
-+void toBe(Boolean negative, int time)
-+void laugh(boolean negative)
-}
-
-
-class People.NoName extends People.Person {
--final boolean negative = true
-+NoName()
-+void remove()
-+void copy(Substance substance)
-+void laughTimePlace(TIME time, PLACE where)
-+void laughPlace(PLACE where)
-+String getFirstName()
-+void laugh(boolean negative)
-}
-
-
-abstract class People.Person {
--final String firstName
--final String secondName
--Profession[] professions
-+Person(String firstName, String secondName)
-+Person(String firstName, String secondName, Profession[] professions)
-+Person(String firstName)
-+String getFirstName()
-+String getSecondName()
-+Profession[] getProfessions()
-+void setProfessions(Profession[] professions)
-+String getFirstSecondName()
-+abstract void laugh(boolean negative)
-}
-
-
-class People.ViktorC extends People.Person implements Interfaces.BeDrunkardMaster {
-+ViktorC()
-+void drinkEveryday()
-+void laugh(boolean negative)
-+Boolean beDrunkard()
-+void drink()
-+Boolean beMaster()
-+boolean beDrunkardMaster()
-}
-
-
-class People.ViktorD extends People.Person {
-+ViktorD()
-+void laugh(boolean negative)
-}
-
-
-class Professions.Brigadier extends Professions.Profession {
-+Brigadier()
-}
-
-
-class Professions.Chief extends Professions.Profession {
-+Chief()
-+void cover(Materials[] items)
-static class Head
-}
-
-
-class Professions.Master extends Professions.Profession {
-+Master()
-}
-
-
-class Professions.Molder extends Professions.Profession {
-+Molder()
-+void cast(Substance substance, Monument monument, Materials item2)
-}
-
-
-class Professions.Official extends Professions.Profession {
-+Official()
-+void hide(TIME time, Substance substance, Materials item)
-}
-
-
 abstract class Professions.Profession {
--final String name
--STATUS status
-+Profession(String name)
-+Profession(String name, STATUS status)
-+String getName()
-+STATUS getStatus()
-+void setStatus(STATUS status)
+- String name
+- STATUS status
++ String getName()
++ STATUS getStatus()
++ void setStatus(STATUS)
 }
-
-
-class Professions.Sculptor extends Professions.Profession implements Interfaces.Exists {
-+Sculptor(STATUS status)
-+void make(Materials[] items)
-+void sculptorMade(Materials[] items)
-+void sculptorMade(Substance substance)
-+void toBePerson(Person person)
-+void toBe(Boolean negative, int time)
-+String toString()
+class People.ViktorD {
++ void laugh(boolean)
 }
-
-
-class Professions.StoneCutter extends Professions.Profession {
-+StoneCutter()
-+void beArmedWith(int machineNum)
-+void constrict(Materials materials)
-+void takes(int[] instruments)
-+void incorrectMove()
-+void takeOn(TIME time)
-+void handle(Substance substance)
+class Content.Specie {
++ String whatInside()
 }
-Professions.StoneCutter -down[#AAA]-o Exeptions.OutOfMachines
-
+class Materials.Cloth {
+- String color
++ String getColor()
++ void setColor(String)
++ String getName()
+}
+class Main {
++ {static} void main(String[])
+}
+interface Interfaces.BeDrunkardMaster {
++ boolean beDrunkardMaster()
+}
+abstract class Materials.Materials {
+- String name
++ String getName()
+}
+class Professions.Molder {
++ Substance cast(Substance,Monument,Materials)
+}
+class People.Lenin {
++ void toSqueeze(Cap)
++ void laugh(boolean)
+}
+class People.Lenin.Arm {
+- String fist
++ String getFist()
+}
+class Professions.Sculptor {
++ String make(Materials[])
++ void sculptorMade(Materials[])
++ Monument sculptorMade(Substance)
++ Person toBePerson(Person)
++ String toBe(Boolean,int)
++ String toString()
+}
+abstract class People.Person {
+- String firstName
+- String secondName
+- Profession[] professions
++ String getFirstName()
++ String getSecondName()
++ Profession[] getProfessions()
++ void setProfessions(Profession[])
++ String getFirstSecondName()
++ {abstract}void laugh(boolean)
+}
+interface Interfaces.Exists {
+~ String toBe(Boolean,int)
+}
+class Content.Clot {
+}
+enum Enums.STATUS {
++  NORMAL
++  INDIFFERENCE
++  HOPELESSNESS
++  UNHAPPY
++  BROKEN
++  FUTURE
++  FINAL
++  ACCURACY
++  RESPONSIBLE
++  FADED
++  UNPUBLISHED
++  PUBLISHED
++  LITTERED
++  UNLITTERED
++  DIFFERENT
+- String status
++ String getStatus()
++ String toString()
+}
+class Emotional.Fear {
++ void change(PLACE,TIME,Emotion)
+}
+class Exeptions.OutOfMachines {
+}
+enum Enums.PLACE {
++  SQUARE
++  LENINGRAD
++  SILENCE
++  FACE
++  NOWHERE
++  STONE
++  NOPLACE
+- String place
++ String getPlace()
++ String toString()
+}
+class Content.Surface {
+}
+class People.NoName {
+- boolean negative
++ void remove(Substance)
++ void copy(Substance)
++ void laughTimePlace(TIME,PLACE)
++ void laughPlace(PLACE)
++ String getFirstName()
++ void laugh(boolean)
+}
+interface Interfaces.WhatInside {
++ String whatInside()
+}
+class Materials.Facture {
++ String beAdjective()
+}
+class Materials.Clay {
++ String beAdjective()
+}
+class Materials.Gypsum {
++ String beAdjective()
+}
+interface Interfaces.BeDrunkard {
++ Boolean beDrunkard()
++ void drink()
+}
+class People.Lihachev {
+- Profession profession
+- Set<Person> friendSet
++ void checkFriendList()
++ Profession whatProfession()
++ void drink(TIME)
++ void laugh(boolean)
++ Boolean beDrunkard()
++ void drink()
++ Boolean beMaster()
++ boolean beDrunkardMaster()
+}
+class Content.Conture {
++ void contureOf(Substance,STATUS)
++ String toBe(Boolean,int)
++ String toBeDefined()
+}
+class People.Human {
++ void beDrunkMaster(BeDrunkardMaster,BeDrunkardMaster)
++ void toBeLaughPerson(Person)
++ void laugh(boolean)
+}
+abstract class Emotional.Emotion {
+- String name
+- STATUS[] status
++ String getName()
++ String toString()
++ STATUS[] getStatus()
++ void setStatus(STATUS[])
+}
+class Content.Monument {
++ void toBePublished(TIME)
++ void toBeBorn()
++ String toBe(Boolean,int)
+}
+enum Enums.TIME {
++  MINUTE
++  MORNING
++  OVERNIGHT
++  GRADUALLY
++  EVERYDAY
++  OPPORTUNITY
++  OCCASIONALLY
++  HASTILY
++  AGAIN
++  LATER
++  AFTER
+- String time
++ String getTime()
++ String toString()
+}
+class Emotional.Grimace {
+}
+class Materials.Wood {
++ String beAdjective()
+}
 class StringMethods.StringMeth {
-+static String capitalize(String str)
-+static String dot(String str)
-+static String dotn(String str)
++ {static} String capitalize(String)
++ {static} String dot(String)
++ {static} String dotn(String)
 }
+abstract class Content.Substance {
+- String name
+- Adjectiveable adj
+- STATUS status
++ String getName()
++ Adjectiveable getAdj()
++ STATUS getStatus()
++ void setStatus(STATUS)
++ int hashCode()
++ boolean equals(Object)
+}
+interface Interfaces.BeMaster {
++ Boolean beMaster()
+}
+class Content.Stage {
++ String await()
+}
+class People.Me {
++ void disturbed(TIME)
++ Set<Person> enlistedToBrigada(Profession,Set<Person>)
++ void countPersonInBrigada(Set<Person>)
++ String toBe(Boolean,int)
++ void laugh(boolean)
+}
+class Materials.Cap {
++ {static} String getCap(byte)
++ void removeCap(TIME)
+}
+class Content.Figure {
++ String toString()
++ String toBe(Boolean,int)
+}
+class Professions.Master {
+}
+class Content.Machine {
++ {static} String[] machines
++ void named(int)
++ Machine thisMachine(int)
++ void withHelp()
++ Notch makeNotch(PLACE)
++ String toString()
+}
+interface Interfaces.BeDefined {
++ String toBeDefined()
+}
+class Professions.Brigadier {
+}
+class Professions.Chief {
++ void cover(Materials[])
+}
+class Professions.Chief.Head {
+- String head
++ String cover(Materials[])
+}
+
+
+Interfaces.Adjectiveable <|.. Materials.Marble
+Interfaces.WhatInside <|.. Materials.Marble
+Materials.Materials <|-- Materials.Marble
+Interfaces.Exists <|.. Content.Boulder
+Content.Substance <|-- Content.Boulder
+Interfaces.BeDrunkardMaster <|.. People.ViktorC
+People.Person <|-- People.ViktorC
+Professions.Profession <|-- Professions.StoneCutter
+Content.Substance <|-- Content.Music
+Professions.Profession <|-- Professions.Official
+Content.Substance <|-- Content.Notch
+Content.Substance <|-- Content.Work
+Content.Substance <|-- Content.Branch
+People.Person <|-- People.ViktorD
+Interfaces.WhatInside <|.. Content.Specie
+Content.Substance <|-- Content.Specie
+Materials.Materials <|-- Materials.Cloth
+Interfaces.BeDrunkard <|-- Interfaces.BeDrunkardMaster
+Interfaces.BeMaster <|-- Interfaces.BeDrunkardMaster
+Professions.Profession <|-- Professions.Molder
+People.Person <|-- People.Lenin
+People.Lenin +.. People.Lenin.Arm
+Interfaces.Exists <|.. Professions.Sculptor
+Professions.Profession <|-- Professions.Sculptor
+Content.Substance <|-- Content.Clot
+Emotional.Emotion <|-- Emotional.Fear
+Exeptions.Exception <|-- Exeptions.OutOfMachines
+Content.Substance <|-- Content.Surface
+People.Person <|-- People.NoName
+Interfaces.Adjectiveable <|.. Materials.Facture
+Materials.Materials <|-- Materials.Facture
+Interfaces.Adjectiveable <|.. Materials.Clay
+Materials.Materials <|-- Materials.Clay
+Interfaces.Adjectiveable <|.. Materials.Gypsum
+Materials.Materials <|-- Materials.Gypsum
+Interfaces.BeDrunkardMaster <|.. People.Lihachev
+People.Person <|-- People.Lihachev
+Interfaces.Exists <|.. Content.Conture
+Interfaces.BeDefined <|.. Content.Conture
+Content.Substance <|-- Content.Conture
+People.Person <|-- People.Human
+Interfaces.Exists <|.. Content.Monument
+Content.Substance <|-- Content.Monument
+Emotional.Emotion <|-- Emotional.Grimace
+Interfaces.Adjectiveable <|.. Materials.Wood
+Materials.Materials <|-- Materials.Wood
+Content.Substance <|-- Content.Stage
+Interfaces.Exists <|.. People.Me
+People.Person <|-- People.Me
+Materials.Materials <|-- Materials.Cap
+Interfaces.Exists <|.. Content.Figure
+Content.Substance <|-- Content.Figure
+Professions.Profession <|-- Professions.Master
+Content.Substance <|-- Content.Machine
+Professions.Profession <|-- Professions.Brigadier
+Professions.Profession <|-- Professions.Chief
+Professions.Chief +.. Professions.Chief.Head
 @enduml

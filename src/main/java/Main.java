@@ -1,15 +1,13 @@
-import Content.*;
-import Emotional.*;
-import Enums.*;
-import Interfaces.Adjectiveable;
-import Materials.*;
-import People.*;
-import Professions.*;
+import content.*;
+import emotional.*;
+import enums.*;
+import interfaces.Adjectiveable;
+import materials.*;
+import people.*;
+import professions.*;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static StringMethods.StringMeth.*;
 
 
 public class Main {
@@ -45,7 +43,6 @@ public class Main {
         Conture conture = new Conture();
         Work work = new Work(new STATUS[]{STATUS.RESPONSIBLE, STATUS.ACCURACY});
         Marble marble1 = new Marble();
-
 
         nn.laughPlace(m.faded()); nn.laughTimePlace(TIME.MINUTE, PLACE.SQUARE);
         human.toBeLaughPerson(sculptor.toBePerson(viktorD));
